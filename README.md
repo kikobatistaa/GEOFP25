@@ -12,9 +12,9 @@ Através da combinação de grandes conjuntos de dados com ferramentas analític
 ## Características Principais
 - **Visualização de Dados**: Criação de mapas interativos e dashboards para uma interpretação visual intuitiva dos resultados.
 
-Este repositório contém todo o código-fonte, datasets utilizados e documentação necessária para replicar ou expandir o estudo. Convidamos a comunidade acadêmica, profissionais da área e entusiastas por tecnologia e geografia a explorar o nosso trabalho e contribuir para o seu desenvolvimento.
+Este repositório contém todo o código-fonte, datasets utilizados e documentação necessária para replicar ou expandir o estudo. Convidamos a comunidade académica, profissionais da área e entusiastas por tecnologia e geografia a explorar o nosso trabalho e contribuir para o seu desenvolvimento.
 
-O ficheiro excel no repositório contém as fontes retiradas da wikipédia.
+O ficheiro excel no repositório contém as fontes retiradas da Wikipedia.
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença MIT - arquivo LICENSE para mais detalhes.
