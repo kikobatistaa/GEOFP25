@@ -17,4 +17,4 @@ Este repositório contém todo o código-fonte, datasets utilizados e documenta�
 O ficheiro excel no repositório contém as fontes retiradas da Wikipedia.
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT - arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença CC BY 4.0 DEED Attribution 4.0 International - arquivo LICENSE para mais detalhes.
