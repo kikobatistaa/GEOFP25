@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8541ecb893187cdb5b85b474387c091e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; top: 10px; right: 10px; z-index: 1000; background-color: white; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+    <button onclick="toggleFilter()">Filtrar Categoria</button>
+    <select id="categoria_filter" style="display: none;">
+      <option value="all">Todas as Categorias</option>
+      <option value="Assalto">Assalto</option><option value="Bombas Detonadas">Bombas Detonadas</option>
+    </select>
+</div>
+
+<script>
+function toggleFilter() {
+    var filtro = document.getElementById('categoria_filter');
+    if (filtro.style.display === 'none' || filtro.style.display === '') {
+        filtro.style.display = 'block';
+    } else {
+        filtro.style.display = 'none';
+    }
+}
+
+document.getElementById('categoria_filter').addEventListener('change', function(e) {
+    var categoria = e.target.value;
+    markers = document.getElementsByClassName('leaflet-marker-icon');
+    for (var i = 0; i < markers.length; i++) {
+        marker = markers[i];
+        marker_categoria = marker.getAttribute('data-title');
+        if (categoria === 'all' || marker_categoria === categoria) {
+            marker.parentNode.style.display = 'block';
+        } else {
+            marker.parentNode.style.display = 'none';
+        }
+    }
+});
+</script>
+    
+            <div class="folium-map" id="map_8541ecb893187cdb5b85b474387c091e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8541ecb893187cdb5b85b474387c091e = L.map(
+                "map_8541ecb893187cdb5b85b474387c091e",
+                {
+                    center: [39.3999, -8.2245],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85289b4890370e8ce818afe719d3786f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_85289b4890370e8ce818afe719d3786f.addTo(map_8541ecb893187cdb5b85b474387c091e);
+        
+    
+            var marker_d862051fdcf4ccac45803ef4910e5c19 = L.marker(
+                [41.336001, -8.560611],
+                {}
+            ).addTo(map_8541ecb893187cdb5b85b474387c091e);
+        
+    
+            var icon_174fac87ea155f8e81241c079c9432fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "prefix": "glyphicon"}
+            );
+            marker_d862051fdcf4ccac45803ef4910e5c19.setIcon(icon_174fac87ea155f8e81241c079c9432fe);
+        
+    
+        var popup_d32464552de0509f1cd2ab233c401599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_346ef1b4839cf7ea3e52f045ade7e71d = $(`<div id="html_346ef1b4839cf7ea3e52f045ade7e71d" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Espírito Santo na Trofa. Foi ...<br>Data: 1984-08-01</div>`)[0];
+                popup_d32464552de0509f1cd2ab233c401599.setContent(html_346ef1b4839cf7ea3e52f045ade7e71d);
+            
+        
+
+        marker_d862051fdcf4ccac45803ef4910e5c19.bindPopup(popup_d32464552de0509f1cd2ab233c401599)
+        ;
+
+        
+    
+    
+            var marker_0f7612f0329512cab0bed0c5ccd83f4d = L.marker(
+                [38.010202, -7.870127],
+                {}
+            ).addTo(map_8541ecb893187cdb5b85b474387c091e);
+        
+    
+            var icon_d51beb892a3b34ab042841fd360d3827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "prefix": "glyphicon"}
+            );
+            marker_0f7612f0329512cab0bed0c5ccd83f4d.setIcon(icon_d51beb892a3b34ab042841fd360d3827);
+        
+    
+        var popup_17a0ae44fde1b584569b8f831106334e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f0b28826db0208afb93067f2d38453 = $(`<div id="html_59f0b28826db0208afb93067f2d38453" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, 8 dispositivos no Bairro Ale...<br>Data: 1985-02-01</div>`)[0];
+                popup_17a0ae44fde1b584569b8f831106334e.setContent(html_59f0b28826db0208afb93067f2d38453);
+            
+        
+
+        marker_0f7612f0329512cab0bed0c5ccd83f4d.bindPopup(popup_17a0ae44fde1b584569b8f831106334e)
+        ;
+
+        
+    
+</script>
+</html>
