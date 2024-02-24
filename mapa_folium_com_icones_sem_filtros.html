@@ -1,0 +1,4377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af6e2aa81616e0dbc3e4b2a70ce1ca32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <div style='position: fixed; bottom: 50px; left: 50px; background-color: rgba(255, 255, 255, 0.6); padding: 5px; border-radius: 5px;'>Map data © Francisco Batista & Tomás Pereira</div>
+    
+            <div class="folium-map" id="map_af6e2aa81616e0dbc3e4b2a70ce1ca32" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_af6e2aa81616e0dbc3e4b2a70ce1ca32 = L.map(
+                "map_af6e2aa81616e0dbc3e4b2a70ce1ca32",
+                {
+                    center: [39.5, -8.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e740ee63fe8c5822c6b3587be875d233 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e740ee63fe8c5822c6b3587be875d233.addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+    
+            var marker_ce723dee0afb53502cb4b7d502611928 = L.marker(
+                [41.33600072, -8.560610545],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_4b81a29202d72b2c1b9084f6a9995e43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce723dee0afb53502cb4b7d502611928.setIcon(icon_4b81a29202d72b2c1b9084f6a9995e43);
+        
+    
+        var popup_ac77634a1c9044f3e034f5c85aab4541 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1cc011bd22f55b0ea0b6c1aeeafa425 = $(`<div id="html_d1cc011bd22f55b0ea0b6c1aeeafa425" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Espírito Santo na Trofa. Foi levado o equivalente a 8 000 000$.<br>Data: 1984-08-01 00:00:00</div>`)[0];
+                popup_ac77634a1c9044f3e034f5c85aab4541.setContent(html_d1cc011bd22f55b0ea0b6c1aeeafa425);
+            
+        
+
+        marker_ce723dee0afb53502cb4b7d502611928.bindPopup(popup_ac77634a1c9044f3e034f5c85aab4541)
+        ;
+
+        
+    
+    
+            marker_ce723dee0afb53502cb4b7d502611928.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b248fb4090753b848495e5221c35a74 = L.marker(
+                [38.01020232, -7.87012711],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_370f755c46f4de1fd6a3e3590b69b021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b248fb4090753b848495e5221c35a74.setIcon(icon_370f755c46f4de1fd6a3e3590b69b021);
+        
+    
+        var popup_930f32232c481c5c998610bd83a63fae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_982a76d9acffcffca14b27f58405dc27 = $(`<div id="html_982a76d9acffcffca14b27f58405dc27" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, 8 dispositivos no Bairro Alemão em Beja. <br>Data: 1985-02-01 00:00:00</div>`)[0];
+                popup_930f32232c481c5c998610bd83a63fae.setContent(html_982a76d9acffcffca14b27f58405dc27);
+            
+        
+
+        marker_5b248fb4090753b848495e5221c35a74.bindPopup(popup_930f32232c481c5c998610bd83a63fae)
+        ;
+
+        
+    
+    
+            marker_5b248fb4090753b848495e5221c35a74.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cff13fab84892481a2d76811e89a75c0 = L.marker(
+                [38.74804059, -9.188370464],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ebb9b851bacaa1b744acf71395cece90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_cff13fab84892481a2d76811e89a75c0.setIcon(icon_ebb9b851bacaa1b744acf71395cece90);
+        
+    
+        var popup_ed5ffbd51f05555697a936081589a940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_455269c95b957aca79c72625bb63d0aa = $(`<div id="html_455269c95b957aca79c72625bb63d0aa" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, disparos contra administrador de uma empresa Lisboeta.<br>Data: 1984-06-01 00:00:00</div>`)[0];
+                popup_ed5ffbd51f05555697a936081589a940.setContent(html_455269c95b957aca79c72625bb63d0aa);
+            
+        
+
+        marker_cff13fab84892481a2d76811e89a75c0.bindPopup(popup_ed5ffbd51f05555697a936081589a940)
+        ;
+
+        
+    
+    
+            marker_cff13fab84892481a2d76811e89a75c0.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81df5cb36262a20716a2ea7c21b8e697 = L.marker(
+                [39.97394199, -8.627772243],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_be885ba228e8c6762ec0eef2bf0628a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_81df5cb36262a20716a2ea7c21b8e697.setIcon(icon_be885ba228e8c6762ec0eef2bf0628a2);
+        
+    
+        var popup_4003f0f811069c368a477a07f472a45e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce0a3cdd9e28b84ce8bc3774335ef4fa = $(`<div id="html_ce0a3cdd9e28b84ce8bc3774335ef4fa" style="width: 100.0%; height: 100.0%;"><b>Vandalismo</b><br>Vandalismo, colocação de Pregos na Estrada Nacional 1.<br>Data: 1984-05-01 00:00:00</div>`)[0];
+                popup_4003f0f811069c368a477a07f472a45e.setContent(html_ce0a3cdd9e28b84ce8bc3774335ef4fa);
+            
+        
+
+        marker_81df5cb36262a20716a2ea7c21b8e697.bindPopup(popup_4003f0f811069c368a477a07f472a45e)
+        ;
+
+        
+    
+    
+            marker_81df5cb36262a20716a2ea7c21b8e697.bindTooltip(
+                `<div>
+                     Vandalismo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43aa94f8645a5861990446c6d771bb97 = L.marker(
+                [38.81558329, -9.2234446],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_b4329d900f7816b58d8f901c1c3a825e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43aa94f8645a5861990446c6d771bb97.setIcon(icon_b4329d900f7816b58d8f901c1c3a825e);
+        
+    
+        var popup_8109b48115f84048b928cee2c8158571 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f27c314338c17900b85edd392afc6c6f = $(`<div id="html_f27c314338c17900b85edd392afc6c6f" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à dependência do Crédito Predial Português em Caneças. Foi levado um equivalente de 2 000 000$.<br>Data: 1983-11-02 00:00:00</div>`)[0];
+                popup_8109b48115f84048b928cee2c8158571.setContent(html_f27c314338c17900b85edd392afc6c6f);
+            
+        
+
+        marker_43aa94f8645a5861990446c6d771bb97.bindPopup(popup_8109b48115f84048b928cee2c8158571)
+        ;
+
+        
+    
+    
+            marker_43aa94f8645a5861990446c6d771bb97.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bdec4c2f65594183e3383f1411c0c96 = L.marker(
+                [39.74917956, -8.803657292],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f54d2dedf0d92b43b8dbdc52e6bc9236 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bdec4c2f65594183e3383f1411c0c96.setIcon(icon_f54d2dedf0d92b43b8dbdc52e6bc9236);
+        
+    
+        var popup_9b34f9ac553495f7bd90649c2c29a5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_852c7ec747c997d6adb993c4cd341230 = $(`<div id="html_852c7ec747c997d6adb993c4cd341230" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas nas instalações bancárias do Banco Espirito Santo em Leiria.<br>Data: 1983-12-03 00:00:00</div>`)[0];
+                popup_9b34f9ac553495f7bd90649c2c29a5cd.setContent(html_852c7ec747c997d6adb993c4cd341230);
+            
+        
+
+        marker_9bdec4c2f65594183e3383f1411c0c96.bindPopup(popup_9b34f9ac553495f7bd90649c2c29a5cd)
+        ;
+
+        
+    
+    
+            marker_9bdec4c2f65594183e3383f1411c0c96.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e01464f058ecafc897280c5f6b709512 = L.marker(
+                [39.40669841, -9.136668519],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_1d534283efdda80c96b97bfa0636d278 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e01464f058ecafc897280c5f6b709512.setIcon(icon_1d534283efdda80c96b97bfa0636d278);
+        
+    
+        var popup_58475f1cbec0ac578b4f6e4aa70552df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65d6a1b8d44e548a207878c384b6bb54 = $(`<div id="html_65d6a1b8d44e548a207878c384b6bb54" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas nas instalações bancárias do Banco Espirito Santo nas Caldas da Rainha.<br>Data: 1983-12-03 00:00:00</div>`)[0];
+                popup_58475f1cbec0ac578b4f6e4aa70552df.setContent(html_65d6a1b8d44e548a207878c384b6bb54);
+            
+        
+
+        marker_e01464f058ecafc897280c5f6b709512.bindPopup(popup_58475f1cbec0ac578b4f6e4aa70552df)
+        ;
+
+        
+    
+    
+            marker_e01464f058ecafc897280c5f6b709512.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97379333b0b79ac8d75f527190dc1ba4 = L.marker(
+                [38.73696464, -9.146114789],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_4308c9d2bb06cdff3e625409027ce844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97379333b0b79ac8d75f527190dc1ba4.setIcon(icon_4308c9d2bb06cdff3e625409027ce844);
+        
+    
+        var popup_6d287121dd9a56b6deb372a759aba842 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d0602722503ccf20590206e328de5dc = $(`<div id="html_7d0602722503ccf20590206e328de5dc" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas de Detonadas no Banco do Brasil em Lisboa, como protesto à visita do então Presidente Brasileiro, João Figueiredo.<br>Data: 1981-02-03 00:00:00</div>`)[0];
+                popup_6d287121dd9a56b6deb372a759aba842.setContent(html_7d0602722503ccf20590206e328de5dc);
+            
+        
+
+        marker_97379333b0b79ac8d75f527190dc1ba4.bindPopup(popup_6d287121dd9a56b6deb372a759aba842)
+        ;
+
+        
+    
+    
+            marker_97379333b0b79ac8d75f527190dc1ba4.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5efd8505da8c41ceb5d9d39e4116965e = L.marker(
+                [38.92267605, -9.294890329],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_19a86d464f1df18b3fe927a455b4062b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5efd8505da8c41ceb5d9d39e4116965e.setIcon(icon_19a86d464f1df18b3fe927a455b4062b);
+        
+    
+        var popup_93371e2c18bb24af22c3be39e0ca718e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_931d09db420228eeaa80e2e75513a70d = $(`<div id="html_931d09db420228eeaa80e2e75513a70d" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio de 2 militares da Guarda Nacional Republicana, ambas vitimas de explosão de um carro armadilhado em Alcainça.<br>Data: 1981-10-03 00:00:00</div>`)[0];
+                popup_93371e2c18bb24af22c3be39e0ca718e.setContent(html_931d09db420228eeaa80e2e75513a70d);
+            
+        
+
+        marker_5efd8505da8c41ceb5d9d39e4116965e.bindPopup(popup_93371e2c18bb24af22c3be39e0ca718e)
+        ;
+
+        
+    
+    
+            marker_5efd8505da8c41ceb5d9d39e4116965e.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_046b7dc06dd4f45029e4701c3cd2db79 = L.marker(
+                [41.53122437, -8.620020273],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_089cee7bafcec410cf9dd8f9b675d824 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_046b7dc06dd4f45029e4701c3cd2db79.setIcon(icon_089cee7bafcec410cf9dd8f9b675d824);
+        
+    
+        var popup_2a0d45448ed6257ab60d890acbe005e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333716b0900c33cfa0b682e60155742c = $(`<div id="html_333716b0900c33cfa0b682e60155742c" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, disparos contra o proprietário e administrador da Cerâmica Modelar.<br>Data: 1984-07-04 00:00:00</div>`)[0];
+                popup_2a0d45448ed6257ab60d890acbe005e3.setContent(html_333716b0900c33cfa0b682e60155742c);
+            
+        
+
+        marker_046b7dc06dd4f45029e4701c3cd2db79.bindPopup(popup_2a0d45448ed6257ab60d890acbe005e3)
+        ;
+
+        
+    
+    
+            marker_046b7dc06dd4f45029e4701c3cd2db79.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7125f96eab55f5bd3d3a6d6e9583017f = L.marker(
+                [41.53141791, -8.617511773],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ea2f9a959e901719268d34e922e860b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7125f96eab55f5bd3d3a6d6e9583017f.setIcon(icon_ea2f9a959e901719268d34e922e860b4);
+        
+    
+        var popup_aaf1ec35790382fd8e3d4f8484a48e40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8b2590fded51bdca388b851bd3d105f = $(`<div id="html_c8b2590fded51bdca388b851bd3d105f" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, disparos de metralhadora contra o Posto da Guarda Nacional Republicana de Barcelos. Este ataque foi perpretado pelo mesmo comando poucos minutos depois de agredir um homem com um tiro à queima-roupa, minutos antes.<br>Data: 1984-07-04 00:00:00</div>`)[0];
+                popup_aaf1ec35790382fd8e3d4f8484a48e40.setContent(html_c8b2590fded51bdca388b851bd3d105f);
+            
+        
+
+        marker_7125f96eab55f5bd3d3a6d6e9583017f.bindPopup(popup_aaf1ec35790382fd8e3d4f8484a48e40)
+        ;
+
+        
+    
+    
+            marker_7125f96eab55f5bd3d3a6d6e9583017f.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c67f6fbc568b7be7a58ec04c5b21e699 = L.marker(
+                [41.16105534, -8.628757795],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ab6cc9340be4b13de686f659f164895f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c67f6fbc568b7be7a58ec04c5b21e699.setIcon(icon_ab6cc9340be4b13de686f659f164895f);
+        
+    
+        var popup_56c6ba5070c5631c6ca58e39f4dbeecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e837291523f1e69e78882c19eec3eec6 = $(`<div id="html_e837291523f1e69e78882c19eec3eec6" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na Sede dos Ex-Comandos do Porto.<br>Data: 1980-10-04 00:00:00</div>`)[0];
+                popup_56c6ba5070c5631c6ca58e39f4dbeecf.setContent(html_e837291523f1e69e78882c19eec3eec6);
+            
+        
+
+        marker_c67f6fbc568b7be7a58ec04c5b21e699.bindPopup(popup_56c6ba5070c5631c6ca58e39f4dbeecf)
+        ;
+
+        
+    
+    
+            marker_c67f6fbc568b7be7a58ec04c5b21e699.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5175b0f48ab248722ca1e9195f5e430e = L.marker(
+                [37.01694667, -7.934218201],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a798266b4d1fba19544ea14fe94e72b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5175b0f48ab248722ca1e9195f5e430e.setIcon(icon_a798266b4d1fba19544ea14fe94e72b2);
+        
+    
+        var popup_f4eeb77e1886dd2dc654a82803fab569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c99ff26055641ea4d67aa6c51b2b075 = $(`<div id="html_6c99ff26055641ea4d67aa6c51b2b075" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na Sede dos Ex-Comandos em Faro.<br>Data: 1980-10-04 00:00:00</div>`)[0];
+                popup_f4eeb77e1886dd2dc654a82803fab569.setContent(html_6c99ff26055641ea4d67aa6c51b2b075);
+            
+        
+
+        marker_5175b0f48ab248722ca1e9195f5e430e.bindPopup(popup_f4eeb77e1886dd2dc654a82803fab569)
+        ;
+
+        
+    
+    
+            marker_5175b0f48ab248722ca1e9195f5e430e.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46f0512ec85f90cadd7bb049f8aa946a = L.marker(
+                [41.44195313, -8.307186942],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_d28de57660b4b776146ff6eb0b887dcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46f0512ec85f90cadd7bb049f8aa946a.setIcon(icon_d28de57660b4b776146ff6eb0b887dcb);
+        
+    
+        var popup_7adaf9f7bd5f40222464a56c36422b08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0442a0cbee0277749bc7c8f8f8199e80 = $(`<div id="html_0442a0cbee0277749bc7c8f8f8199e80" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na Sede dos Ex-Comandos.<br>Data: 1980-10-04 00:00:00</div>`)[0];
+                popup_7adaf9f7bd5f40222464a56c36422b08.setContent(html_0442a0cbee0277749bc7c8f8f8199e80);
+            
+        
+
+        marker_46f0512ec85f90cadd7bb049f8aa946a.bindPopup(popup_7adaf9f7bd5f40222464a56c36422b08)
+        ;
+
+        
+    
+    
+            marker_46f0512ec85f90cadd7bb049f8aa946a.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9f6cedcd1253d8ccfd1b4ccffe72d4b = L.marker(
+                [38.76933528, -9.296016027],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_3e2f1d6a0fa6b6a90a51c4843b05f433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9f6cedcd1253d8ccfd1b4ccffe72d4b.setIcon(icon_3e2f1d6a0fa6b6a90a51c4843b05f433);
+        
+    
+        var popup_82ac6456b0669ed1eb0323eb028b8480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c20884b91f2730646155df9f991507ae = $(`<div id="html_c20884b91f2730646155df9f991507ae" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Santander Totta e Açores, e ao Crédito Predial Português. Foram levados 5 141 982$ (equivalente)<br>Data: 1980-05-05 00:00:00</div>`)[0];
+                popup_82ac6456b0669ed1eb0323eb028b8480.setContent(html_c20884b91f2730646155df9f991507ae);
+            
+        
+
+        marker_f9f6cedcd1253d8ccfd1b4ccffe72d4b.bindPopup(popup_82ac6456b0669ed1eb0323eb028b8480)
+        ;
+
+        
+    
+    
+            marker_f9f6cedcd1253d8ccfd1b4ccffe72d4b.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa0b35a67a444b7c40a153d6109af2ea = L.marker(
+                [38.66968557, -9.157672682],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ee91b5baf06fe17108b4e3586056b659 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_aa0b35a67a444b7c40a153d6109af2ea.setIcon(icon_ee91b5baf06fe17108b4e3586056b659);
+        
+    
+        var popup_0bddcf6fa9e79a62bd9ceaba97940cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13012ae6d30b4ea19b8e0d52c806fcae = $(`<div id="html_13012ae6d30b4ea19b8e0d52c806fcae" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Troca de Tiros com agentes da Polícia Judiciária, na Cova da Piedade<br>Data: 1980-11-05 00:00:00</div>`)[0];
+                popup_0bddcf6fa9e79a62bd9ceaba97940cd2.setContent(html_13012ae6d30b4ea19b8e0d52c806fcae);
+            
+        
+
+        marker_aa0b35a67a444b7c40a153d6109af2ea.bindPopup(popup_0bddcf6fa9e79a62bd9ceaba97940cd2)
+        ;
+
+        
+    
+    
+            marker_aa0b35a67a444b7c40a153d6109af2ea.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af5519872389f077baa62e8c2514b023 = L.marker(
+                [38.68111897, -9.159931823],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_b7fd53112c0a52e433f453c753945059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af5519872389f077baa62e8c2514b023.setIcon(icon_b7fd53112c0a52e433f453c753945059);
+        
+    
+        var popup_aa8ceb6055b242be824a38f2b30f845a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72188ddc254738ea7e01d05efbff3c01 = $(`<div id="html_72188ddc254738ea7e01d05efbff3c01" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, alvo era o administrador da Fábrica de Louças de Sacavém. Este foi a única vitima.<br>Data: 1982-12-06 00:00:00</div>`)[0];
+                popup_aa8ceb6055b242be824a38f2b30f845a.setContent(html_72188ddc254738ea7e01d05efbff3c01);
+            
+        
+
+        marker_af5519872389f077baa62e8c2514b023.bindPopup(popup_aa8ceb6055b242be824a38f2b30f845a)
+        ;
+
+        
+    
+    
+            marker_af5519872389f077baa62e8c2514b023.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15a6c663918a1fb54008a6b2a6a17626 = L.marker(
+                [38.67790327, -9.161416519],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_4c96f20047c1ecc872d28908e546b4c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15a6c663918a1fb54008a6b2a6a17626.setIcon(icon_4c96f20047c1ecc872d28908e546b4c5);
+        
+    
+        var popup_6ac5b41ee43fd9343d2f35bf3e5c1803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9181c67cf8527f200c8416b97d517514 = $(`<div id="html_9181c67cf8527f200c8416b97d517514" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas com difusão de panfletos em Almada.<br>Data: 1983-12-06 00:00:00</div>`)[0];
+                popup_6ac5b41ee43fd9343d2f35bf3e5c1803.setContent(html_9181c67cf8527f200c8416b97d517514);
+            
+        
+
+        marker_15a6c663918a1fb54008a6b2a6a17626.bindPopup(popup_6ac5b41ee43fd9343d2f35bf3e5c1803)
+        ;
+
+        
+    
+    
+            marker_15a6c663918a1fb54008a6b2a6a17626.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5be1c2382df28e6b0c4f0a1db1c8e175 = L.marker(
+                [38.72222198, -9.139501161],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a01dcc293e5285d6d3f024ae38eaf0dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5be1c2382df28e6b0c4f0a1db1c8e175.setIcon(icon_a01dcc293e5285d6d3f024ae38eaf0dd);
+        
+    
+        var popup_5702546ba497fecf4301a2e32d9c78de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32121b29d2a0cc943653166ab88b9fe7 = $(`<div id="html_32121b29d2a0cc943653166ab88b9fe7" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas com difusão de panfletos em Lisboa.<br>Data: 1983-12-06 00:00:00</div>`)[0];
+                popup_5702546ba497fecf4301a2e32d9c78de.setContent(html_32121b29d2a0cc943653166ab88b9fe7);
+            
+        
+
+        marker_5be1c2382df28e6b0c4f0a1db1c8e175.bindPopup(popup_5702546ba497fecf4301a2e32d9c78de)
+        ;
+
+        
+    
+    
+            marker_5be1c2382df28e6b0c4f0a1db1c8e175.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_785765e8d591155582676f1443b65221 = L.marker(
+                [38.52320553, -8.89621618],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ce21b52fbc09dbe3e4ec9cf306ae76dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_785765e8d591155582676f1443b65221.setIcon(icon_ce21b52fbc09dbe3e4ec9cf306ae76dc);
+        
+    
+        var popup_2e44517fd8de53c84acdc4e3aa1f0e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84a4b0927b5c6720a1249f39bdcff2e2 = $(`<div id="html_84a4b0927b5c6720a1249f39bdcff2e2" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas com difusão de panfletos em Setúbal, ferindo uma criança de 12 anos.<br>Data: 1983-12-06 00:00:00</div>`)[0];
+                popup_2e44517fd8de53c84acdc4e3aa1f0e0c.setContent(html_84a4b0927b5c6720a1249f39bdcff2e2);
+            
+        
+
+        marker_785765e8d591155582676f1443b65221.bindPopup(popup_2e44517fd8de53c84acdc4e3aa1f0e0c)
+        ;
+
+        
+    
+    
+            marker_785765e8d591155582676f1443b65221.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b98aa662fc104bbbbc21d55fac66d09 = L.marker(
+                [38.66198116, -9.079386758],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e364d23c4e52de999e880ba602eb5482 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b98aa662fc104bbbbc21d55fac66d09.setIcon(icon_e364d23c4e52de999e880ba602eb5482);
+        
+    
+        var popup_cf7b0679473cc059422d47cfb735585d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7eb6b7afa6c011785980df2ee546f77 = $(`<div id="html_d7eb6b7afa6c011785980df2ee546f77" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas com difusão de panfletos no Barreiro. <br>Data: 1983-12-06 00:00:00</div>`)[0];
+                popup_cf7b0679473cc059422d47cfb735585d.setContent(html_d7eb6b7afa6c011785980df2ee546f77);
+            
+        
+
+        marker_6b98aa662fc104bbbbc21d55fac66d09.bindPopup(popup_cf7b0679473cc059422d47cfb735585d)
+        ;
+
+        
+    
+    
+            marker_6b98aa662fc104bbbbc21d55fac66d09.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b359e33d4c7c4d54dc105befdfe7a2f = L.marker(
+                [38.74424127, -9.105408904],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_bd2c34b788f63704be8dbff802450abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b359e33d4c7c4d54dc105befdfe7a2f.setIcon(icon_bd2c34b788f63704be8dbff802450abb);
+        
+    
+        var popup_187bab5e936cfc802d5c11796f77a22f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efd035a345f877296b936dc693613c90 = $(`<div id="html_efd035a345f877296b936dc693613c90" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na sede da Entreposto em Lisboa.<br>Data: 1984-01-06 00:00:00</div>`)[0];
+                popup_187bab5e936cfc802d5c11796f77a22f.setContent(html_efd035a345f877296b936dc693613c90);
+            
+        
+
+        marker_7b359e33d4c7c4d54dc105befdfe7a2f.bindPopup(popup_187bab5e936cfc802d5c11796f77a22f)
+        ;
+
+        
+    
+    
+            marker_7b359e33d4c7c4d54dc105befdfe7a2f.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787b7bd0da65b15809a2a04820897bed = L.marker(
+                [40.92056328, -8.497193258],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f630cc2708188bd11761dd3070bc30d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_787b7bd0da65b15809a2a04820897bed.setIcon(icon_f630cc2708188bd11761dd3070bc30d5);
+        
+    
+        var popup_52cd38a44f767e4d63c09ed4172b2315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24eff09eff8a12c302076acea1e6a621 = $(`<div id="html_24eff09eff8a12c302076acea1e6a621" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na sede da Tecnitool em Escapães.<br>Data: 1984-01-06 00:00:00</div>`)[0];
+                popup_52cd38a44f767e4d63c09ed4172b2315.setContent(html_24eff09eff8a12c302076acea1e6a621);
+            
+        
+
+        marker_787b7bd0da65b15809a2a04820897bed.bindPopup(popup_52cd38a44f767e4d63c09ed4172b2315)
+        ;
+
+        
+    
+    
+            marker_787b7bd0da65b15809a2a04820897bed.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d695091c09e7af4bfddda3457e815d18 = L.marker(
+                [38.57091846, -8.897602555],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_133f21ff03b0541f2721cecba82f9dbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d695091c09e7af4bfddda3457e815d18.setIcon(icon_133f21ff03b0541f2721cecba82f9dbb);
+        
+    
+        var popup_e5d14d78592fa292e2cf479ad5c50655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7abd98790b2417b28679ec50dcf9804c = $(`<div id="html_7abd98790b2417b28679ec50dcf9804c" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na sede da Tecnosado.<br>Data: 1984-01-06 00:00:00</div>`)[0];
+                popup_e5d14d78592fa292e2cf479ad5c50655.setContent(html_7abd98790b2417b28679ec50dcf9804c);
+            
+        
+
+        marker_d695091c09e7af4bfddda3457e815d18.bindPopup(popup_e5d14d78592fa292e2cf479ad5c50655)
+        ;
+
+        
+    
+    
+            marker_d695091c09e7af4bfddda3457e815d18.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4794f4db89631d4d7c7e7b7359d62e15 = L.marker(
+                [38.92809109, -9.267952177],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ffebf65a451a718fe03243e24ace83cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cyan", "prefix": "glyphicon"}
+            );
+            marker_4794f4db89631d4d7c7e7b7359d62e15.setIcon(icon_ffebf65a451a718fe03243e24ace83cc);
+        
+    
+        var popup_5e870a7214295c176fedb26beff48267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_732dee61773f927504e66a71222ec4bc = $(`<div id="html_732dee61773f927504e66a71222ec4bc" style="width: 100.0%; height: 100.0%;"><b>Assalto com Vitimas Mortais</b><br>Duplo Assalto ao Banco Santander Totta  e Açores, e ao Banco Nacional Ultramarino, na Malveira. Levando à morte de 3 pessoas. Foi levado um equivalente de 2 854 822$<br>Data: 1980-10-06 00:00:00</div>`)[0];
+                popup_5e870a7214295c176fedb26beff48267.setContent(html_732dee61773f927504e66a71222ec4bc);
+            
+        
+
+        marker_4794f4db89631d4d7c7e7b7359d62e15.bindPopup(popup_5e870a7214295c176fedb26beff48267)
+        ;
+
+        
+    
+    
+            marker_4794f4db89631d4d7c7e7b7359d62e15.bindTooltip(
+                `<div>
+                     Assalto com Vitimas Mortais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e03e1b311f4c7dfb7c10404e2449d78 = L.marker(
+                [38.72496916, -9.147475276],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_5cc93545f3b4eb071dab1a056f4cc2b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e03e1b311f4c7dfb7c10404e2449d78.setIcon(icon_5cc93545f3b4eb071dab1a056f4cc2b3);
+        
+    
+        var popup_9a5dcb256462aa15958c78a26df9ccdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae707d2e51799e43c28ed15c47fa933d = $(`<div id="html_ae707d2e51799e43c28ed15c47fa933d" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores, perto do Marquês de Pombal, em Lisboa. Foi levado o equivalente a 541 200$.<br>Data: 1984-02-07 00:00:00</div>`)[0];
+                popup_9a5dcb256462aa15958c78a26df9ccdb.setContent(html_ae707d2e51799e43c28ed15c47fa933d);
+            
+        
+
+        marker_4e03e1b311f4c7dfb7c10404e2449d78.bindPopup(popup_9a5dcb256462aa15958c78a26df9ccdb)
+        ;
+
+        
+    
+    
+            marker_4e03e1b311f4c7dfb7c10404e2449d78.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b4229cbcb58591cc8115f80fdd74bc7 = L.marker(
+                [38.70975753, -9.3974581],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_88ba499838d456fff91e294620b935dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b4229cbcb58591cc8115f80fdd74bc7.setIcon(icon_88ba499838d456fff91e294620b935dd);
+        
+    
+        var popup_8505bf247b9b580f95a05873590e6180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e594b9a075f9f060ae50d3be6edacc = $(`<div id="html_b6e594b9a075f9f060ae50d3be6edacc" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na residência de um empresário no Estoril.<br>Data: 1983-11-07 00:00:00</div>`)[0];
+                popup_8505bf247b9b580f95a05873590e6180.setContent(html_b6e594b9a075f9f060ae50d3be6edacc);
+            
+        
+
+        marker_9b4229cbcb58591cc8115f80fdd74bc7.bindPopup(popup_8505bf247b9b580f95a05873590e6180)
+        ;
+
+        
+    
+    
+            marker_9b4229cbcb58591cc8115f80fdd74bc7.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0b422ef0efb475955a3e072882bc8dc = L.marker(
+                [38.69961794, -9.239402955],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_3cd0868f91192a8fe3a062b5f2fd5160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0b422ef0efb475955a3e072882bc8dc.setIcon(icon_3cd0868f91192a8fe3a062b5f2fd5160);
+        
+    
+        var popup_534f341899b75cc5bf6a9659a2199882 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98fddcdd520c3cd08a56cc9bf6275d31 = $(`<div id="html_98fddcdd520c3cd08a56cc9bf6275d31" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas numa rua não especificada no Dafundo.<br>Data: 1983-11-07 00:00:00</div>`)[0];
+                popup_534f341899b75cc5bf6a9659a2199882.setContent(html_98fddcdd520c3cd08a56cc9bf6275d31);
+            
+        
+
+        marker_e0b422ef0efb475955a3e072882bc8dc.bindPopup(popup_534f341899b75cc5bf6a9659a2199882)
+        ;
+
+        
+    
+    
+            marker_e0b422ef0efb475955a3e072882bc8dc.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bb0494044475011b221531fb639cdb3 = L.marker(
+                [38.67971311, -9.321926004],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0b04389421df5697293d148d33d5bf05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bb0494044475011b221531fb639cdb3.setIcon(icon_0b04389421df5697293d148d33d5bf05);
+        
+    
+        var popup_93790a442b2699ad557eb99450c65f87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c934fa65d6e2e58718d7f19eb1120af = $(`<div id="html_6c934fa65d6e2e58718d7f19eb1120af" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na COMIBERLANT (Estabelecimento de Comunicação e Informação da NATO), em Oeiras.<br>Data: 1985-12-09 00:00:00</div>`)[0];
+                popup_93790a442b2699ad557eb99450c65f87.setContent(html_6c934fa65d6e2e58718d7f19eb1120af);
+            
+        
+
+        marker_9bb0494044475011b221531fb639cdb3.bindPopup(popup_93790a442b2699ad557eb99450c65f87)
+        ;
+
+        
+    
+    
+            marker_9bb0494044475011b221531fb639cdb3.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ec2b1074f5c6c8c52d7885d2da7890b = L.marker(
+                [38.5689904, -8.900918958],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_74a9fdf7ffc654e1fa18e76ecd0007e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ec2b1074f5c6c8c52d7885d2da7890b.setIcon(icon_74a9fdf7ffc654e1fa18e76ecd0007e5);
+        
+    
+        var popup_0883b92871b8267b2b65d1c3f3a3b8f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5fd05063a824f4a70aae36c4843e944 = $(`<div id="html_c5fd05063a824f4a70aae36c4843e944" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Banco não especificado em Palmela.Foram levados um equivalente a 1 340 207$<br>Data: 1980-07-09 00:00:00</div>`)[0];
+                popup_0883b92871b8267b2b65d1c3f3a3b8f0.setContent(html_c5fd05063a824f4a70aae36c4843e944);
+            
+        
+
+        marker_9ec2b1074f5c6c8c52d7885d2da7890b.bindPopup(popup_0883b92871b8267b2b65d1c3f3a3b8f0)
+        ;
+
+        
+    
+    
+            marker_9ec2b1074f5c6c8c52d7885d2da7890b.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c49c3406f93f0fd7a7329c73110b1e8c = L.marker(
+                [38.6260328, -9.11864267],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_fadf8696f3f369b6c35c50838049f75b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c49c3406f93f0fd7a7329c73110b1e8c.setIcon(icon_fadf8696f3f369b6c35c50838049f75b);
+        
+    
+        var popup_2e11668883fee4737de68ac9389a6758 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e1a41d6f7fdce760b6cf2132b2b6d28 = $(`<div id="html_9e1a41d6f7fdce760b6cf2132b2b6d28" style="width: 100.0%; height: 100.0%;"><b>Tentativa de Assalto (falhada)</b><br>Assalto a Borges e Irmão.<br>Data: 1980-07-09 00:00:00</div>`)[0];
+                popup_2e11668883fee4737de68ac9389a6758.setContent(html_9e1a41d6f7fdce760b6cf2132b2b6d28);
+            
+        
+
+        marker_c49c3406f93f0fd7a7329c73110b1e8c.bindPopup(popup_2e11668883fee4737de68ac9389a6758)
+        ;
+
+        
+    
+    
+            marker_c49c3406f93f0fd7a7329c73110b1e8c.bindTooltip(
+                `<div>
+                     Tentativa de Assalto (falhada)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66fea09622048da4bcddccb9bb00f34e = L.marker(
+                [38.69444717, -9.291752901],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_30cae585f8e8e94c21d9afbe379a1971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66fea09622048da4bcddccb9bb00f34e.setIcon(icon_30cae585f8e8e94c21d9afbe379a1971);
+        
+    
+        var popup_39bff4fc3fa2f05cc081aa1a78d01f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f00a77dc838e2a86dcadec4b1c4b4205 = $(`<div id="html_f00a77dc838e2a86dcadec4b1c4b4205" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Espirito Santo de Paço de Arcos. 200 000$ (equivalente)<br>Data: 1980-05-09 00:00:00</div>`)[0];
+                popup_39bff4fc3fa2f05cc081aa1a78d01f6a.setContent(html_f00a77dc838e2a86dcadec4b1c4b4205);
+            
+        
+
+        marker_66fea09622048da4bcddccb9bb00f34e.bindPopup(popup_39bff4fc3fa2f05cc081aa1a78d01f6a)
+        ;
+
+        
+    
+    
+            marker_66fea09622048da4bcddccb9bb00f34e.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d205b35467334cf3eec42c76540d6f4e = L.marker(
+                [41.44958365, -8.27289595],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f138888a6d62d4af5a5ea8d21dd38622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_d205b35467334cf3eec42c76540d6f4e.setIcon(icon_f138888a6d62d4af5a5ea8d21dd38622);
+        
+    
+        var popup_b849b42eea5320391d444e26521a0149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bddf464ef095ffa2b2ba1e4ec2f382d = $(`<div id="html_6bddf464ef095ffa2b2ba1e4ec2f382d" style="width: 100.0%; height: 100.0%;"><b>Bombas Não Detonadas</b><br>Colocação de bomba-relógio na fábrica da Petróleos Alfa<br>Data: 1980-05-09 00:00:00</div>`)[0];
+                popup_b849b42eea5320391d444e26521a0149.setContent(html_6bddf464ef095ffa2b2ba1e4ec2f382d);
+            
+        
+
+        marker_d205b35467334cf3eec42c76540d6f4e.bindPopup(popup_b849b42eea5320391d444e26521a0149)
+        ;
+
+        
+    
+    
+            marker_d205b35467334cf3eec42c76540d6f4e.bindTooltip(
+                `<div>
+                     Bombas Não Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98c893b1524e77253f9dc5cd0bae9312 = L.marker(
+                [41.22944616, -8.619631487],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e41d9b3dc43da2bade3cca44f13ba31c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_98c893b1524e77253f9dc5cd0bae9312.setIcon(icon_e41d9b3dc43da2bade3cca44f13ba31c);
+        
+    
+        var popup_8a29b996b53b2ebe0719c713bdb750da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee8500a8b4838ad9e177f0a137db792a = $(`<div id="html_ee8500a8b4838ad9e177f0a137db792a" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Troca de Tiros com a Polícia de Segurança Pública, durante o tiroteio dá-se a morte de um dos comandos. outros 3 seriam detidos.<br>Data: 1985-04-10 00:00:00</div>`)[0];
+                popup_8a29b996b53b2ebe0719c713bdb750da.setContent(html_ee8500a8b4838ad9e177f0a137db792a);
+            
+        
+
+        marker_98c893b1524e77253f9dc5cd0bae9312.bindPopup(popup_8a29b996b53b2ebe0719c713bdb750da)
+        ;
+
+        
+    
+    
+            marker_98c893b1524e77253f9dc5cd0bae9312.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abe774cdfc7fc5329d601fdfb638243f = L.marker(
+                [41.26041734, -8.615412115],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a7d39229b975bc4cd8df1416da5fa668 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abe774cdfc7fc5329d601fdfb638243f.setIcon(icon_a7d39229b975bc4cd8df1416da5fa668);
+        
+    
+        var popup_0ad03ec9cc7deaaa29aad7656a2d03c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d69abe8e9c586d697891962a85ccf80 = $(`<div id="html_2d69abe8e9c586d697891962a85ccf80" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à União de Bancos Portugueses em Castelo da Maia, no Porto.<br>Data: 1983-01-10 00:00:00</div>`)[0];
+                popup_0ad03ec9cc7deaaa29aad7656a2d03c5.setContent(html_2d69abe8e9c586d697891962a85ccf80);
+            
+        
+
+        marker_abe774cdfc7fc5329d601fdfb638243f.bindPopup(popup_0ad03ec9cc7deaaa29aad7656a2d03c5)
+        ;
+
+        
+    
+    
+            marker_abe774cdfc7fc5329d601fdfb638243f.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac3d5de7f30b9847b16dc1fce6eb7fd6 = L.marker(
+                [40.20929735, -8.426560035],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_d8e96bd41eca3462c2ba9aaeb68830dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "hotpink", "prefix": "glyphicon"}
+            );
+            marker_ac3d5de7f30b9847b16dc1fce6eb7fd6.setIcon(icon_d8e96bd41eca3462c2ba9aaeb68830dd);
+        
+    
+        var popup_f60d87686345d6e59e1dc63c0f798fa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b6d31771517e8d57db59569263f521f = $(`<div id="html_3b6d31771517e8d57db59569263f521f" style="width: 100.0%; height: 100.0%;"><b>Fugas da Prisao</b><br>Fuga da Prisão durante o transporte do prisioneiro Daniel Horácio para o Hospital Universitário de Coimbra.<br>Data: 1983-01-10 00:00:00</div>`)[0];
+                popup_f60d87686345d6e59e1dc63c0f798fa9.setContent(html_3b6d31771517e8d57db59569263f521f);
+            
+        
+
+        marker_ac3d5de7f30b9847b16dc1fce6eb7fd6.bindPopup(popup_f60d87686345d6e59e1dc63c0f798fa9)
+        ;
+
+        
+    
+    
+            marker_ac3d5de7f30b9847b16dc1fce6eb7fd6.bindTooltip(
+                `<div>
+                     Fugas da Prisao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0b7b2abbf3c9e03b6eb914f471bac2 = L.marker(
+                [41.54907648, -8.560022174],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f95c0feab4da2cc44ec8ee1ea2d4896f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b0b7b2abbf3c9e03b6eb914f471bac2.setIcon(icon_f95c0feab4da2cc44ec8ee1ea2d4896f);
+        
+    
+        var popup_8a2c361a5054d797befd9edb4733e6ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aabc21ba334a7e833737ccf5f4b60512 = $(`<div id="html_aabc21ba334a7e833737ccf5f4b60512" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na Produção Vinícola da Quinta do Barco, em Barcelos.<br>Data: 1985-01-10 00:00:00</div>`)[0];
+                popup_8a2c361a5054d797befd9edb4733e6ba.setContent(html_aabc21ba334a7e833737ccf5f4b60512);
+            
+        
+
+        marker_7b0b7b2abbf3c9e03b6eb914f471bac2.bindPopup(popup_8a2c361a5054d797befd9edb4733e6ba)
+        ;
+
+        
+    
+    
+            marker_7b0b7b2abbf3c9e03b6eb914f471bac2.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e32b1e2e3d7501afcc40b22d529dc57 = L.marker(
+                [41.33601981, -8.560486843],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a8f2de6e0a153c466615d3e09e4b9a63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e32b1e2e3d7501afcc40b22d529dc57.setIcon(icon_a8f2de6e0a153c466615d3e09e4b9a63);
+        
+    
+        var popup_1b602a02ceab2a123666692ad255e5c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d545da0a87a429abd93e1c0324444b2 = $(`<div id="html_3d545da0a87a429abd93e1c0324444b2" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Espirito Santo, na Trofa. Foi levado um equivalente de 7 000 000$<br>Data: 1981-03-10 00:00:00</div>`)[0];
+                popup_1b602a02ceab2a123666692ad255e5c7.setContent(html_3d545da0a87a429abd93e1c0324444b2);
+            
+        
+
+        marker_2e32b1e2e3d7501afcc40b22d529dc57.bindPopup(popup_1b602a02ceab2a123666692ad255e5c7)
+        ;
+
+        
+    
+    
+            marker_2e32b1e2e3d7501afcc40b22d529dc57.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0adc27c24298fa871d48bd02a0408c88 = L.marker(
+                [41.10491659, -8.55224541],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e7ecae8e33cd1a5195fd083ac4380460 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0adc27c24298fa871d48bd02a0408c88.setIcon(icon_e7ecae8e33cd1a5195fd083ac4380460);
+        
+    
+        var popup_493e647fcbaccd34fe3f06a9c22d29c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_778daff9dc055db2c2f906c6facf22b4 = $(`<div id="html_778daff9dc055db2c2f906c6facf22b4" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à União de Bancos Portugueses em Avintes. Foi levado um equivalente a 1 250 000$.<br>Data: 1982-09-10 00:00:00</div>`)[0];
+                popup_493e647fcbaccd34fe3f06a9c22d29c1.setContent(html_778daff9dc055db2c2f906c6facf22b4);
+            
+        
+
+        marker_0adc27c24298fa871d48bd02a0408c88.bindPopup(popup_493e647fcbaccd34fe3f06a9c22d29c1)
+        ;
+
+        
+    
+    
+            marker_0adc27c24298fa871d48bd02a0408c88.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c5f6a226e53f021f9d00eb5cc9aabb0 = L.marker(
+                [41.21934166, -8.637366512],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_4f187b81e41da932b2a662a78b9a64ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c5f6a226e53f021f9d00eb5cc9aabb0.setIcon(icon_4f187b81e41da932b2a662a78b9a64ae);
+        
+    
+        var popup_1a0d14c4cec5ce0007f7431b8dfcb348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1328cb2203628716a2b93bdef9b59f9a = $(`<div id="html_1328cb2203628716a2b93bdef9b59f9a" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Totta e Açores, foi levado um equivalente de 179 000$<br>Data: 1981-06-12 00:00:00</div>`)[0];
+                popup_1a0d14c4cec5ce0007f7431b8dfcb348.setContent(html_1328cb2203628716a2b93bdef9b59f9a);
+            
+        
+
+        marker_4c5f6a226e53f021f9d00eb5cc9aabb0.bindPopup(popup_1a0d14c4cec5ce0007f7431b8dfcb348)
+        ;
+
+        
+    
+    
+            marker_4c5f6a226e53f021f9d00eb5cc9aabb0.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a51a0df68e0a50640e8cb253a324527 = L.marker(
+                [38.73775332, -9.14539711],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_c4f5d3b4859bb3c7638c1b203a45faa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a51a0df68e0a50640e8cb253a324527.setIcon(icon_c4f5d3b4859bb3c7638c1b203a45faa0);
+        
+    
+        var popup_327938a1276ebb2ebb9ac8d6379e3dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8400fa1967aeead5e0184016de992844 = $(`<div id="html_8400fa1967aeead5e0184016de992844" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na Embaixada do Chile em Lisboa.<br>Data: 1980-09-12 00:00:00</div>`)[0];
+                popup_327938a1276ebb2ebb9ac8d6379e3dc4.setContent(html_8400fa1967aeead5e0184016de992844);
+            
+        
+
+        marker_3a51a0df68e0a50640e8cb253a324527.bindPopup(popup_327938a1276ebb2ebb9ac8d6379e3dc4)
+        ;
+
+        
+    
+    
+            marker_3a51a0df68e0a50640e8cb253a324527.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a20f262f6713013297823a5009b79670 = L.marker(
+                [41.1525398, -8.611849429],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_75d59610cdf512662433289b2f7abcca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a20f262f6713013297823a5009b79670.setIcon(icon_75d59610cdf512662433289b2f7abcca);
+        
+    
+        var popup_58da56535dc2cc1aeeb8a4c72f51f4c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32b3581283eb6f3deef0fac9f3e3b433 = $(`<div id="html_32b3581283eb6f3deef0fac9f3e3b433" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Consulado do Chile no Porto. <br>Data: 1980-09-12 00:00:00</div>`)[0];
+                popup_58da56535dc2cc1aeeb8a4c72f51f4c3.setContent(html_32b3581283eb6f3deef0fac9f3e3b433);
+            
+        
+
+        marker_a20f262f6713013297823a5009b79670.bindPopup(popup_58da56535dc2cc1aeeb8a4c72f51f4c3)
+        ;
+
+        
+    
+    
+            marker_a20f262f6713013297823a5009b79670.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b63a4726df5b0deff329b696cba5cbf5 = L.marker(
+                [39.46364016, -8.978309164],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_54ae76bcd33701ec06466c2d36a1c2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b63a4726df5b0deff329b696cba5cbf5.setIcon(icon_54ae76bcd33701ec06466c2d36a1c2ca);
+        
+    
+        var popup_1a0246aa8f7557a8e4081df6ecc6229d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bc33e233e1d2cfa6604a3f9e812ba8b = $(`<div id="html_4bc33e233e1d2cfa6604a3f9e812ba8b" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Pinto e Sotto Mayor, em Turquel, Alcobaça. Foi levado o equivalente a 2 000 000$.<br>Data: 1983-04-13 00:00:00</div>`)[0];
+                popup_1a0246aa8f7557a8e4081df6ecc6229d.setContent(html_4bc33e233e1d2cfa6604a3f9e812ba8b);
+            
+        
+
+        marker_b63a4726df5b0deff329b696cba5cbf5.bindPopup(popup_1a0246aa8f7557a8e4081df6ecc6229d)
+        ;
+
+        
+    
+    
+            marker_b63a4726df5b0deff329b696cba5cbf5.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c5f4987856b0efaa14f646f151a59c9 = L.marker(
+                [39.45123664, -8.247658813],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0fa8500a37f4270a9d00ee58db868423 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6c5f4987856b0efaa14f646f151a59c9.setIcon(icon_0fa8500a37f4270a9d00ee58db868423);
+        
+    
+        var popup_def1929003079c9c9bd17559dd78cc65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e00a1a687fd01fd82a3615baefb798b3 = $(`<div id="html_e00a1a687fd01fd82a3615baefb798b3" style="width: 100.0%; height: 100.0%;"><b>Bombas Não Detonadas</b><br>Bombas Não Detonadas, colocada na estátua do Comendador Duarte Ferreira no Tramagal. A bomba foi encontrada e desarmada pela Guarda Nacional Republicana.<br>Data: 1984-12-13 00:00:00</div>`)[0];
+                popup_def1929003079c9c9bd17559dd78cc65.setContent(html_e00a1a687fd01fd82a3615baefb798b3);
+            
+        
+
+        marker_6c5f4987856b0efaa14f646f151a59c9.bindPopup(popup_def1929003079c9c9bd17559dd78cc65)
+        ;
+
+        
+    
+    
+            marker_6c5f4987856b0efaa14f646f151a59c9.bindTooltip(
+                `<div>
+                     Bombas Não Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2f37e8a49644c7a4b78741e9d53fa2e = L.marker(
+                [37.43967959, -7.767964056],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_049c0c339aba2ed6bc721fece3e1d589 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e2f37e8a49644c7a4b78741e9d53fa2e.setIcon(icon_049c0c339aba2ed6bc721fece3e1d589);
+        
+    
+        var popup_4afb0fe1074465f85dcee8f58c028ab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b15e1515c3cfdbd965f1b3477991ced = $(`<div id="html_3b15e1515c3cfdbd965f1b3477991ced" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio de um GNR<br>Data: 1980-05-13 00:00:00</div>`)[0];
+                popup_4afb0fe1074465f85dcee8f58c028ab6.setContent(html_3b15e1515c3cfdbd965f1b3477991ced);
+            
+        
+
+        marker_e2f37e8a49644c7a4b78741e9d53fa2e.bindPopup(popup_4afb0fe1074465f85dcee8f58c028ab6)
+        ;
+
+        
+    
+    
+            marker_e2f37e8a49644c7a4b78741e9d53fa2e.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0d0a63f6a1691d87f5567088d0ff144 = L.marker(
+                [38.79988381, -9.162722779],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ff0fbeb6381bcccf6b8cf77ad42b951b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cyan", "prefix": "glyphicon"}
+            );
+            marker_d0d0a63f6a1691d87f5567088d0ff144.setIcon(icon_ff0fbeb6381bcccf6b8cf77ad42b951b);
+        
+    
+        var popup_cac479036b97c5f1517ec2331b132e5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5efe3ba6545f0967f77e0f8c3d2c387e = $(`<div id="html_5efe3ba6545f0967f77e0f8c3d2c387e" style="width: 100.0%; height: 100.0%;"><b>Assalto com Vitimas Mortais</b><br>Assalto ao Banco Fonsecas e Burnay, na Póvoa de Santo Adrião. Foi levado o equivalente a 2 443 855$. Este assalto levou à morte de 2 pessoas.<br>Data: 1981-10-13 00:00:00</div>`)[0];
+                popup_cac479036b97c5f1517ec2331b132e5a.setContent(html_5efe3ba6545f0967f77e0f8c3d2c387e);
+            
+        
+
+        marker_d0d0a63f6a1691d87f5567088d0ff144.bindPopup(popup_cac479036b97c5f1517ec2331b132e5a)
+        ;
+
+        
+    
+    
+            marker_d0d0a63f6a1691d87f5567088d0ff144.bindTooltip(
+                `<div>
+                     Assalto com Vitimas Mortais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2740fca00b8749eb3b5c0984f6830991 = L.marker(
+                [40.27906281, -7.491419315],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_dac73725c9386059c1db485be835514a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2740fca00b8749eb3b5c0984f6830991.setIcon(icon_dac73725c9386059c1db485be835514a);
+        
+    
+        var popup_899bea950cc7858fc88e22fe2357b14d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_721372abf9d2046e6800e44f3b7dfaa5 = $(`<div id="html_721372abf9d2046e6800e44f3b7dfaa5" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Posto da Guarda Nacional Republicana da Covilhã<br>Data: 1981-12-14 00:00:00</div>`)[0];
+                popup_899bea950cc7858fc88e22fe2357b14d.setContent(html_721372abf9d2046e6800e44f3b7dfaa5);
+            
+        
+
+        marker_2740fca00b8749eb3b5c0984f6830991.bindPopup(popup_899bea950cc7858fc88e22fe2357b14d)
+        ;
+
+        
+    
+    
+            marker_2740fca00b8749eb3b5c0984f6830991.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7790b6f8030e3e8df27f6fbb943d572 = L.marker(
+                [38.37041206, -8.500578435],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_bbef84b561eb8525b411940a2a4f7e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7790b6f8030e3e8df27f6fbb943d572.setIcon(icon_bbef84b561eb8525b411940a2a4f7e5f);
+        
+    
+        var popup_35bd3aa755e286834cbde0bff624f5f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35ed94708839ba0e43600e110bf8fe57 = $(`<div id="html_35ed94708839ba0e43600e110bf8fe57" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Posto da Guarda Nacional Republicana de Alcácer do Sal.<br>Data: 1981-12-14 00:00:00</div>`)[0];
+                popup_35bd3aa755e286834cbde0bff624f5f7.setContent(html_35ed94708839ba0e43600e110bf8fe57);
+            
+        
+
+        marker_a7790b6f8030e3e8df27f6fbb943d572.bindPopup(popup_35bd3aa755e286834cbde0bff624f5f7)
+        ;
+
+        
+    
+    
+            marker_a7790b6f8030e3e8df27f6fbb943d572.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dbe6dfc0094d8b4ada0725b0d12e06a = L.marker(
+                [40.14325356, -7.49742316],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_77e4d0b963e5d985bde26725042d32ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6dbe6dfc0094d8b4ada0725b0d12e06a.setIcon(icon_77e4d0b963e5d985bde26725042d32ab);
+        
+    
+        var popup_e563ca6a31334b24fd9c148e8587d523 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5eef820b000938280c12e1289206b6a = $(`<div id="html_a5eef820b000938280c12e1289206b6a" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Posto da Guarda Nacional Republicana do Fundão.<br>Data: 1981-12-14 00:00:00</div>`)[0];
+                popup_e563ca6a31334b24fd9c148e8587d523.setContent(html_a5eef820b000938280c12e1289206b6a);
+            
+        
+
+        marker_6dbe6dfc0094d8b4ada0725b0d12e06a.bindPopup(popup_e563ca6a31334b24fd9c148e8587d523)
+        ;
+
+        
+    
+    
+            marker_6dbe6dfc0094d8b4ada0725b0d12e06a.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34db221cb36a865a1a122a6acda7984d = L.marker(
+                [38.69175278, -9.355722245],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_870ea1d14eea5ab2061c1dd239f2c4a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34db221cb36a865a1a122a6acda7984d.setIcon(icon_870ea1d14eea5ab2061c1dd239f2c4a4);
+        
+    
+        var popup_2baa25d203f1fd80e265e8c188e6d080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbe5c40e99f2b48c0152c5462d383d51 = $(`<div id="html_dbe5c40e99f2b48c0152c5462d383d51" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas contra as viaturas de administradores da Entreposto<br>Data: 1985-01-14 00:00:00</div>`)[0];
+                popup_2baa25d203f1fd80e265e8c188e6d080.setContent(html_dbe5c40e99f2b48c0152c5462d383d51);
+            
+        
+
+        marker_34db221cb36a865a1a122a6acda7984d.bindPopup(popup_2baa25d203f1fd80e265e8c188e6d080)
+        ;
+
+        
+    
+    
+            marker_34db221cb36a865a1a122a6acda7984d.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72788cc3698c25f09467c3d661c485fc = L.marker(
+                [38.71218828, -9.225320896],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e051a1bc7bb0ea73db1ea934ac0bb19c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72788cc3698c25f09467c3d661c485fc.setIcon(icon_e051a1bc7bb0ea73db1ea934ac0bb19c);
+        
+    
+        var popup_3f81375b1252539d38e8b8d43817d792 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_582380f4b8a98e9cb9dbce614c7589a4 = $(`<div id="html_582380f4b8a98e9cb9dbce614c7589a4" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na viatura de administradores da Entreposto.<br>Data: 1985-01-14 00:00:00</div>`)[0];
+                popup_3f81375b1252539d38e8b8d43817d792.setContent(html_582380f4b8a98e9cb9dbce614c7589a4);
+            
+        
+
+        marker_72788cc3698c25f09467c3d661c485fc.bindPopup(popup_3f81375b1252539d38e8b8d43817d792)
+        ;
+
+        
+    
+    
+            marker_72788cc3698c25f09467c3d661c485fc.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_170e074b59aa76ee76c87de35a545db3 = L.marker(
+                [41.11658307, -8.607848901],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_c8b881cfa17455c3a60d660305844ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_170e074b59aa76ee76c87de35a545db3.setIcon(icon_c8b881cfa17455c3a60d660305844ecb);
+        
+    
+        var popup_5232a401389c2456afb84f31d1ed2e93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_465fd344a3080d5b3d245ff505547953 = $(`<div id="html_465fd344a3080d5b3d245ff505547953" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Fonsecas e Burnay, em Vila Nova de Gaia, foi levado um equivalente a 6 764 000$<br>Data: 1981-07-14 00:00:00</div>`)[0];
+                popup_5232a401389c2456afb84f31d1ed2e93.setContent(html_465fd344a3080d5b3d245ff505547953);
+            
+        
+
+        marker_170e074b59aa76ee76c87de35a545db3.bindPopup(popup_5232a401389c2456afb84f31d1ed2e93)
+        ;
+
+        
+    
+    
+            marker_170e074b59aa76ee76c87de35a545db3.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81881f0d5a24340f03f0aa83bbf9b088 = L.marker(
+                [38.57322449, -8.901986441],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_4c905ed76e4c3315703f791ebc0c29d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81881f0d5a24340f03f0aa83bbf9b088.setIcon(icon_4c905ed76e4c3315703f791ebc0c29d3);
+        
+    
+        var popup_fc782e6605f16cec61333d87c1698a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_894acd3346124128a0152e8a5a289c0d = $(`<div id="html_894acd3346124128a0152e8a5a289c0d" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas colocadas nas viaturas de 2 administradores da empresa Cometna<br>Data: 1983-11-14 00:00:00</div>`)[0];
+                popup_fc782e6605f16cec61333d87c1698a62.setContent(html_894acd3346124128a0152e8a5a289c0d);
+            
+        
+
+        marker_81881f0d5a24340f03f0aa83bbf9b088.bindPopup(popup_fc782e6605f16cec61333d87c1698a62)
+        ;
+
+        
+    
+    
+            marker_81881f0d5a24340f03f0aa83bbf9b088.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d73b3a4ba58db2e4577f5ab4b1b812e = L.marker(
+                [41.19208457, -8.68620728],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ec0123724e869060ea6a378363f963a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d73b3a4ba58db2e4577f5ab4b1b812e.setIcon(icon_ec0123724e869060ea6a378363f963a5);
+        
+    
+        var popup_94bc57612d1f0a30234b4f1da8604615 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfc296aa2a1b030d6bd2f42315c6d77f = $(`<div id="html_cfc296aa2a1b030d6bd2f42315c6d77f" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores, perto da Doca de Leixões. Foi levado o equivalente a 6 923 891$.<br>Data: 1984-09-14 00:00:00</div>`)[0];
+                popup_94bc57612d1f0a30234b4f1da8604615.setContent(html_cfc296aa2a1b030d6bd2f42315c6d77f);
+            
+        
+
+        marker_3d73b3a4ba58db2e4577f5ab4b1b812e.bindPopup(popup_94bc57612d1f0a30234b4f1da8604615)
+        ;
+
+        
+    
+    
+            marker_3d73b3a4ba58db2e4577f5ab4b1b812e.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c42034e6abf78938c0f40eacc8e1f75 = L.marker(
+                [38.74368655, -9.148700153],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_5b0c52b82a0a204bf529d0933c63a0f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c42034e6abf78938c0f40eacc8e1f75.setIcon(icon_5b0c52b82a0a204bf529d0933c63a0f2);
+        
+    
+        var popup_85cd5d3a77deb459acac5d2ef3339fc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf54ea3782544e2bb3f96794060214f8 = $(`<div id="html_cf54ea3782544e2bb3f96794060214f8" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas nas sedes da Air France e da Lufthansa em Lisboa.<br>Data: 1982-08-15 00:00:00</div>`)[0];
+                popup_85cd5d3a77deb459acac5d2ef3339fc3.setContent(html_cf54ea3782544e2bb3f96794060214f8);
+            
+        
+
+        marker_4c42034e6abf78938c0f40eacc8e1f75.bindPopup(popup_85cd5d3a77deb459acac5d2ef3339fc3)
+        ;
+
+        
+    
+    
+            marker_4c42034e6abf78938c0f40eacc8e1f75.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c95222149a1a264182c844310836582f = L.marker(
+                [38.711667, -9.160528],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a3f7d6f918fe410b3cc0ed5614e1130a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c95222149a1a264182c844310836582f.setIcon(icon_a3f7d6f918fe410b3cc0ed5614e1130a);
+        
+    
+        var popup_7fb188926d8becdb3b729e99dba10e47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59613034eb9322b4e5681384fe743c0d = $(`<div id="html_59613034eb9322b4e5681384fe743c0d" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio, sendo o alvo o Diretor-Geral dos Serviços Prisionais.<br>Data: 1986-02-15 00:00:00</div>`)[0];
+                popup_7fb188926d8becdb3b729e99dba10e47.setContent(html_59613034eb9322b4e5681384fe743c0d);
+            
+        
+
+        marker_c95222149a1a264182c844310836582f.bindPopup(popup_7fb188926d8becdb3b729e99dba10e47)
+        ;
+
+        
+    
+    
+            marker_c95222149a1a264182c844310836582f.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_489d0a58c5a2316d45da400de2877dc5 = L.marker(
+                [37.11653776, -8.53518718],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_058c7622877ac315151f5a35734ad318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_489d0a58c5a2316d45da400de2877dc5.setIcon(icon_058c7622877ac315151f5a35734ad318);
+        
+    
+        var popup_8d1508fe7823e4866be9f42058833ba4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e050951e533318ae464e40bbd4e1e44 = $(`<div id="html_3e050951e533318ae464e40bbd4e1e44" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à Dependência Bancária do Banco Nacional Ultramarino. Foi levado o equivalente a 18 632 000$.<br>Data: 1985-05-15 00:00:00</div>`)[0];
+                popup_8d1508fe7823e4866be9f42058833ba4.setContent(html_3e050951e533318ae464e40bbd4e1e44);
+            
+        
+
+        marker_489d0a58c5a2316d45da400de2877dc5.bindPopup(popup_8d1508fe7823e4866be9f42058833ba4)
+        ;
+
+        
+    
+    
+            marker_489d0a58c5a2316d45da400de2877dc5.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6fa803f31d3148417acaa053823d276 = L.marker(
+                [38.76011695, -9.117608753],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_b525dab7367666b965927a4a39abe150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e6fa803f31d3148417acaa053823d276.setIcon(icon_b525dab7367666b965927a4a39abe150);
+        
+    
+        var popup_3d2c8f852aab171ace84c5f07ab0a38e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_224fc92003b7813116e14e23625556e2 = $(`<div id="html_224fc92003b7813116e14e23625556e2" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio de um Agente da Polícia de Segurança Pública.<br>Data: 1987-08-16 00:00:00</div>`)[0];
+                popup_3d2c8f852aab171ace84c5f07ab0a38e.setContent(html_224fc92003b7813116e14e23625556e2);
+            
+        
+
+        marker_e6fa803f31d3148417acaa053823d276.bindPopup(popup_3d2c8f852aab171ace84c5f07ab0a38e)
+        ;
+
+        
+    
+    
+            marker_e6fa803f31d3148417acaa053823d276.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_424234cd4f7b52857e262f6af3cbe2f3 = L.marker(
+                [41.18065863, -8.687114792],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e46c34b56bcc5ebccf12f20be8c83da7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_424234cd4f7b52857e262f6af3cbe2f3.setIcon(icon_e46c34b56bcc5ebccf12f20be8c83da7);
+        
+    
+        var popup_77f27ffd9ea99fa203923886331bd5d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e15b0af0e9ddeaca4d9ee3c7220a0839 = $(`<div id="html_e15b0af0e9ddeaca4d9ee3c7220a0839" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores em Matosinhos. Foi levado o equivalente a 1 000 000$.<br>Data: 1983-08-17 00:00:00</div>`)[0];
+                popup_77f27ffd9ea99fa203923886331bd5d5.setContent(html_e15b0af0e9ddeaca4d9ee3c7220a0839);
+            
+        
+
+        marker_424234cd4f7b52857e262f6af3cbe2f3.bindPopup(popup_77f27ffd9ea99fa203923886331bd5d5)
+        ;
+
+        
+    
+    
+            marker_424234cd4f7b52857e262f6af3cbe2f3.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6955348aefe705226e94a7d4ac332b3c = L.marker(
+                [38.7399978, -9.150948122],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_3a524b1d26b1c49bd0b51b8630fe157c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6955348aefe705226e94a7d4ac332b3c.setIcon(icon_3a524b1d26b1c49bd0b51b8630fe157c);
+        
+    
+        var popup_7a3aad3f16dee429108fc2d098fec708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1befbd99a6d6b0c6d143cb99a4d619c1 = $(`<div id="html_1befbd99a6d6b0c6d143cb99a4d619c1" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, tiros disparados na Avenida de Berna, em Lisboa, contra agentes da Polícia de Segurança Pública enquanto esta tenta intercetar um carro roubado.<br>Data: 1981-06-17 00:00:00</div>`)[0];
+                popup_7a3aad3f16dee429108fc2d098fec708.setContent(html_1befbd99a6d6b0c6d143cb99a4d619c1);
+            
+        
+
+        marker_6955348aefe705226e94a7d4ac332b3c.bindPopup(popup_7a3aad3f16dee429108fc2d098fec708)
+        ;
+
+        
+    
+    
+            marker_6955348aefe705226e94a7d4ac332b3c.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e7fd74405e4f78b546370e8a0cb8818 = L.marker(
+                [37.14015639, -8.541423351],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_fcb780e15a349daed8d29411cf88af2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_9e7fd74405e4f78b546370e8a0cb8818.setIcon(icon_fcb780e15a349daed8d29411cf88af2f);
+        
+    
+        var popup_5247c020e35d1ed51d5e99e7d39eed51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b09c4536f897d0e99327e2a3580643c = $(`<div id="html_4b09c4536f897d0e99327e2a3580643c" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, contra um agente da Polícia de Segurança Pública que havia detido um comando das FP25.<br>Data: 1987-07-18 00:00:00</div>`)[0];
+                popup_5247c020e35d1ed51d5e99e7d39eed51.setContent(html_4b09c4536f897d0e99327e2a3580643c);
+            
+        
+
+        marker_9e7fd74405e4f78b546370e8a0cb8818.bindPopup(popup_5247c020e35d1ed51d5e99e7d39eed51)
+        ;
+
+        
+    
+    
+            marker_9e7fd74405e4f78b546370e8a0cb8818.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_526bdeb143de3f073feabb6b1e56a44d = L.marker(
+                [38.17733724, -8.56643014],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_cd8e6d9753b9c8ac758be111c8fce630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_526bdeb143de3f073feabb6b1e56a44d.setIcon(icon_cd8e6d9753b9c8ac758be111c8fce630);
+        
+    
+        var popup_cd15eb9db76a44a3f51bbf97b27b5d81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c8a737b0014ee8dfc3c6f1418f75132 = $(`<div id="html_9c8a737b0014ee8dfc3c6f1418f75132" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas nos carros e nas residências de 2 administradores da Empresa SAPEC, bem como na caixa de correio do diretor de marketing da mesma empresa.<br>Data: 1982-04-19 00:00:00</div>`)[0];
+                popup_cd15eb9db76a44a3f51bbf97b27b5d81.setContent(html_9c8a737b0014ee8dfc3c6f1418f75132);
+            
+        
+
+        marker_526bdeb143de3f073feabb6b1e56a44d.bindPopup(popup_cd15eb9db76a44a3f51bbf97b27b5d81)
+        ;
+
+        
+    
+    
+            marker_526bdeb143de3f073feabb6b1e56a44d.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_843e227a620d5e5fee4c0a7a661e2f42 = L.marker(
+                [38.01300209, -7.865310426],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_fb588df25f85b8598511b67c62ad67bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_843e227a620d5e5fee4c0a7a661e2f42.setIcon(icon_fb588df25f85b8598511b67c62ad67bf);
+        
+    
+        var popup_8313571d6505443b23692df51697a19f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aebe06a56728d8433bf097b291177149 = $(`<div id="html_aebe06a56728d8433bf097b291177149" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, ataque contra a residência de um proprietário rural.<br>Data: 1985-01-19 00:00:00</div>`)[0];
+                popup_8313571d6505443b23692df51697a19f.setContent(html_aebe06a56728d8433bf097b291177149);
+            
+        
+
+        marker_843e227a620d5e5fee4c0a7a661e2f42.bindPopup(popup_8313571d6505443b23692df51697a19f)
+        ;
+
+        
+    
+    
+            marker_843e227a620d5e5fee4c0a7a661e2f42.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_873ff55e45124d85d1ab5b9c2aa8296b = L.marker(
+                [38.01440139, -7.864222891],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_9b812789ded814cc6862a93f69f7de66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_873ff55e45124d85d1ab5b9c2aa8296b.setIcon(icon_9b812789ded814cc6862a93f69f7de66);
+        
+    
+        var popup_6b61216097e5f6a8a3f4dbe1300a7d07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad8e0cb27b235112ca2fa4b8094d58c5 = $(`<div id="html_ad8e0cb27b235112ca2fa4b8094d58c5" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, ataque contra a residência de um proprietário rural.<br>Data: 1985-01-19 00:00:00</div>`)[0];
+                popup_6b61216097e5f6a8a3f4dbe1300a7d07.setContent(html_ad8e0cb27b235112ca2fa4b8094d58c5);
+            
+        
+
+        marker_873ff55e45124d85d1ab5b9c2aa8296b.bindPopup(popup_6b61216097e5f6a8a3f4dbe1300a7d07)
+        ;
+
+        
+    
+    
+            marker_873ff55e45124d85d1ab5b9c2aa8296b.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21ffeb274af8932cb474d66a92274d0b = L.marker(
+                [38.64737379, -8.211526251],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0c115df5bd4808e3b74662f0426a19b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21ffeb274af8932cb474d66a92274d0b.setIcon(icon_0c115df5bd4808e3b74662f0426a19b3);
+        
+    
+        var popup_5df26f0d23e893bcebcb29a3b82e94ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1cbf28df709e17851d611ceb02a9f69 = $(`<div id="html_a1cbf28df709e17851d611ceb02a9f69" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Roubo de Explosivos na Empresa Mota&Companhia em Montemor-o-Novo. Foram levados 2800 detonadores elétricos, 1800 detonadores pirotécnicos e 300 kilogramas de Amonite.<br>Data: 1981-07-19 00:00:00</div>`)[0];
+                popup_5df26f0d23e893bcebcb29a3b82e94ea.setContent(html_a1cbf28df709e17851d611ceb02a9f69);
+            
+        
+
+        marker_21ffeb274af8932cb474d66a92274d0b.bindPopup(popup_5df26f0d23e893bcebcb29a3b82e94ea)
+        ;
+
+        
+    
+    
+            marker_21ffeb274af8932cb474d66a92274d0b.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1158d78c62d13da8e4d6c454c7de5c2e = L.marker(
+                [37.07599868, -8.117057662],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f9107da0d7f85ac2c860b07ff815e6ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1158d78c62d13da8e4d6c454c7de5c2e.setIcon(icon_f9107da0d7f85ac2c860b07ff815e6ce);
+        
+    
+        var popup_e93768c2e809c80a0507dcfe29e65427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce195ead31bf49e0bfb2a73482fe7828 = $(`<div id="html_ce195ead31bf49e0bfb2a73482fe7828" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à dependência do Banco Português do Atlântico em Vilamoura. Foi levado um equivalente a 14 300 000$.<br>Data: 1983-07-19 00:00:00</div>`)[0];
+                popup_e93768c2e809c80a0507dcfe29e65427.setContent(html_ce195ead31bf49e0bfb2a73482fe7828);
+            
+        
+
+        marker_1158d78c62d13da8e4d6c454c7de5c2e.bindPopup(popup_e93768c2e809c80a0507dcfe29e65427)
+        ;
+
+        
+    
+    
+            marker_1158d78c62d13da8e4d6c454c7de5c2e.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6baca2061fc6f5a5eb7e7628beb384b = L.marker(
+                [38.64595613, -9.237786702],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0434e1529c1a659f7f6580b1465f0e89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d6baca2061fc6f5a5eb7e7628beb384b.setIcon(icon_0434e1529c1a659f7f6580b1465f0e89);
+        
+    
+        var popup_9fe7e3d8680486f58eaa9ab22751ce71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74420ecf46879700b9e17a2597356eaf = $(`<div id="html_74420ecf46879700b9e17a2597356eaf" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio de um ex-Comando das FP25<br>Data: 1985-07-19 00:00:00</div>`)[0];
+                popup_9fe7e3d8680486f58eaa9ab22751ce71.setContent(html_74420ecf46879700b9e17a2597356eaf);
+            
+        
+
+        marker_d6baca2061fc6f5a5eb7e7628beb384b.bindPopup(popup_9fe7e3d8680486f58eaa9ab22751ce71)
+        ;
+
+        
+    
+    
+            marker_d6baca2061fc6f5a5eb7e7628beb384b.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a18d68a466bfa9dba6120250921b1053 = L.marker(
+                [38.93233731, -9.256880008],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_87b30fb2839970ba8ce1b07999c71444 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_a18d68a466bfa9dba6120250921b1053.setIcon(icon_87b30fb2839970ba8ce1b07999c71444);
+        
+    
+        var popup_6e760cb8f4bfbbec58f4aa3b053d5aa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cc2242fd6fbb1687f7cf76f8411d16e = $(`<div id="html_2cc2242fd6fbb1687f7cf76f8411d16e" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Tentativa de Homicidio na Malveira<br>Data: 1981-03-19 00:00:00</div>`)[0];
+                popup_6e760cb8f4bfbbec58f4aa3b053d5aa1.setContent(html_2cc2242fd6fbb1687f7cf76f8411d16e);
+            
+        
+
+        marker_a18d68a466bfa9dba6120250921b1053.bindPopup(popup_6e760cb8f4bfbbec58f4aa3b053d5aa1)
+        ;
+
+        
+    
+    
+            marker_a18d68a466bfa9dba6120250921b1053.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52adda8ecfb91e77c8f3515a0c9f4f89 = L.marker(
+                [38.57115347, -7.907161726],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e54048f7eaaa7833cdfb20f7e22404cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52adda8ecfb91e77c8f3515a0c9f4f89.setIcon(icon_e54048f7eaaa7833cdfb20f7e22404cd);
+        
+    
+        var popup_fc968de73b666a752a92c1ef6a7074ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f944436e698c91ef6146e4beda9f6df3 = $(`<div id="html_f944436e698c91ef6146e4beda9f6df3" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, colocadas na viatura do Chefe das Finanças de Évora.<br>Data: 1984-04-20 00:00:00</div>`)[0];
+                popup_fc968de73b666a752a92c1ef6a7074ae.setContent(html_f944436e698c91ef6146e4beda9f6df3);
+            
+        
+
+        marker_52adda8ecfb91e77c8f3515a0c9f4f89.bindPopup(popup_fc968de73b666a752a92c1ef6a7074ae)
+        ;
+
+        
+    
+    
+            marker_52adda8ecfb91e77c8f3515a0c9f4f89.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2881cfdf47e2232867507927be9faec = L.marker(
+                [40.20693286, -8.418402617],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_1d11f39325a591f0b87ac9f77064bf64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "hotpink", "prefix": "glyphicon"}
+            );
+            marker_f2881cfdf47e2232867507927be9faec.setIcon(icon_1d11f39325a591f0b87ac9f77064bf64);
+        
+    
+        var popup_99a92b994c69b6224ca491b4e3d96655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f37d6d821d6b12880a26e3cda727023 = $(`<div id="html_9f37d6d821d6b12880a26e3cda727023" style="width: 100.0%; height: 100.0%;"><b>Fugas da Prisao</b><br>Bombas Detonadas, atentado com granada de mão ofensiva contra a Penitenciária de Coimbra.<br>Data: 1984-09-20 00:00:00</div>`)[0];
+                popup_99a92b994c69b6224ca491b4e3d96655.setContent(html_9f37d6d821d6b12880a26e3cda727023);
+            
+        
+
+        marker_f2881cfdf47e2232867507927be9faec.bindPopup(popup_99a92b994c69b6224ca491b4e3d96655)
+        ;
+
+        
+    
+    
+            marker_f2881cfdf47e2232867507927be9faec.bindTooltip(
+                `<div>
+                     Fugas da Prisao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46806e075e7a0ddb17cfc64e07557002 = L.marker(
+                [39.74347071, -8.807441244],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_529e76e565e4deda08615c238fcb1f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46806e075e7a0ddb17cfc64e07557002.setIcon(icon_529e76e565e4deda08615c238fcb1f9e);
+        
+    
+        var popup_2e7de8010e865230b6afefe36a85099f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e8f55bf105dabea95ae00f02b73946f = $(`<div id="html_5e8f55bf105dabea95ae00f02b73946f" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Duplo Assalto aos Bancos: Português do Atlântico e Crédito Predial Português. Foi Levado um total equivalente a 1 340 000$.<br>Data: 1982-10-21 00:00:00</div>`)[0];
+                popup_2e7de8010e865230b6afefe36a85099f.setContent(html_5e8f55bf105dabea95ae00f02b73946f);
+            
+        
+
+        marker_46806e075e7a0ddb17cfc64e07557002.bindPopup(popup_2e7de8010e865230b6afefe36a85099f)
+        ;
+
+        
+    
+    
+            marker_46806e075e7a0ddb17cfc64e07557002.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c14dadc0d0431196341880cac2e57407 = L.marker(
+                [38.73044784, -9.158660446],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_7448fe4ab868e91c11205c859ee80609 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "hotpink", "prefix": "glyphicon"}
+            );
+            marker_c14dadc0d0431196341880cac2e57407.setIcon(icon_7448fe4ab868e91c11205c859ee80609);
+        
+    
+        var popup_27b57a870647c4c2673194c8af8cda17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d193c31ff260c3112c8f43561aeb5e4 = $(`<div id="html_4d193c31ff260c3112c8f43561aeb5e4" style="width: 100.0%; height: 100.0%;"><b>Fugas da Prisao</b><br>Fuga da Prisão do Estabelecimento Prisional de Lisboa, em que 10 prisioneiros escaparam. 9 dos quais pertenciam às FP25.<br>Data: 1985-09-21 00:00:00</div>`)[0];
+                popup_27b57a870647c4c2673194c8af8cda17.setContent(html_4d193c31ff260c3112c8f43561aeb5e4);
+            
+        
+
+        marker_c14dadc0d0431196341880cac2e57407.bindPopup(popup_27b57a870647c4c2673194c8af8cda17)
+        ;
+
+        
+    
+    
+            marker_c14dadc0d0431196341880cac2e57407.bindTooltip(
+                `<div>
+                     Fugas da Prisao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae466bb3bb4068a2d95040b5b01d3656 = L.marker(
+                [41.12901974, -8.608559928],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_5dd24469f0098edc645a959f581bf76a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae466bb3bb4068a2d95040b5b01d3656.setIcon(icon_5dd24469f0098edc645a959f581bf76a);
+        
+    
+        var popup_2a808ea3afdb290ba668e4d28d84337b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95850159dfdc73328199028093dc7d28 = $(`<div id="html_95850159dfdc73328199028093dc7d28" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à Consetória do Registo Civil de Vila Nova de Gaia. Foram levados 20 impressos para bilhetes de identidade<br>Data: 1980-07-22 00:00:00</div>`)[0];
+                popup_2a808ea3afdb290ba668e4d28d84337b.setContent(html_95850159dfdc73328199028093dc7d28);
+            
+        
+
+        marker_ae466bb3bb4068a2d95040b5b01d3656.bindPopup(popup_2a808ea3afdb290ba668e4d28d84337b)
+        ;
+
+        
+    
+    
+            marker_ae466bb3bb4068a2d95040b5b01d3656.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad7de2ef8553c91492f65ddd459d7d3b = L.marker(
+                [41.21293422, -8.634162373],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_6789eef1cbe5516143e7ddc0acd0ac36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad7de2ef8553c91492f65ddd459d7d3b.setIcon(icon_6789eef1cbe5516143e7ddc0acd0ac36);
+        
+    
+        var popup_3296fbe0a8edeb85d1b02b2906d1ffbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dd3857a97506c0f86cc7849568a50d9 = $(`<div id="html_7dd3857a97506c0f86cc7849568a50d9" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores em Leça do Balio. Foi levado o equivalente a 5 712 900$.<br>Data: 1983-06-22 00:00:00</div>`)[0];
+                popup_3296fbe0a8edeb85d1b02b2906d1ffbf.setContent(html_7dd3857a97506c0f86cc7849568a50d9);
+            
+        
+
+        marker_ad7de2ef8553c91492f65ddd459d7d3b.bindPopup(popup_3296fbe0a8edeb85d1b02b2906d1ffbf)
+        ;
+
+        
+    
+    
+            marker_ad7de2ef8553c91492f65ddd459d7d3b.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f886de590ef76a3b564ec1ab611148f = L.marker(
+                [39.75034425, -7.923309876],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_10f32eda54525c429bb575c0d6ee729a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f886de590ef76a3b564ec1ab611148f.setIcon(icon_10f32eda54525c429bb575c0d6ee729a);
+        
+    
+        var popup_9660047be61f3a59aef80194fd09b6e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15ba96db1f038005dfeca0da711d412d = $(`<div id="html_15ba96db1f038005dfeca0da711d412d" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas numa serralharia em Proença-a-Nova.<br>Data: 1984-08-23 00:00:00</div>`)[0];
+                popup_9660047be61f3a59aef80194fd09b6e4.setContent(html_15ba96db1f038005dfeca0da711d412d);
+            
+        
+
+        marker_0f886de590ef76a3b564ec1ab611148f.bindPopup(popup_9660047be61f3a59aef80194fd09b6e4)
+        ;
+
+        
+    
+    
+            marker_0f886de590ef76a3b564ec1ab611148f.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a613a63d45e6a9e9d9a2f837fba36af0 = L.marker(
+                [41.43527559, -8.292650472],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_c30d1fec2283e5592eab8bb504589456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_a613a63d45e6a9e9d9a2f837fba36af0.setIcon(icon_c30d1fec2283e5592eab8bb504589456);
+        
+    
+        var popup_def9c21e4b8e64fc737e20674756d98c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59fd8ca7754776e87cda8244bebc240d = $(`<div id="html_59fd8ca7754776e87cda8244bebc240d" style="width: 100.0%; height: 100.0%;"><b>Bombas Não Detonadas</b><br>Bomba Não Detonada colocada na viatura do Presidente da Empresa Petróleos Alfa.<br>Data: NaT</div>`)[0];
+                popup_def9c21e4b8e64fc737e20674756d98c.setContent(html_59fd8ca7754776e87cda8244bebc240d);
+            
+        
+
+        marker_a613a63d45e6a9e9d9a2f837fba36af0.bindPopup(popup_def9c21e4b8e64fc737e20674756d98c)
+        ;
+
+        
+    
+    
+            marker_a613a63d45e6a9e9d9a2f837fba36af0.bindTooltip(
+                `<div>
+                     Bombas Não Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1667c76547e99bb8aba434aa6772ca38 = L.marker(
+                [38.70931525, -9.420784466],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_1bd1093aca77cda889c1194d59ca6319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1667c76547e99bb8aba434aa6772ca38.setIcon(icon_1bd1093aca77cda889c1194d59ca6319);
+        
+    
+        var popup_4000a0e7ef4894127438351d3e66fb70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a197639294153d9cb216496c367571 = $(`<div id="html_d7a197639294153d9cb216496c367571" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, tentativa de homicidio ao diretor delegado da Standard Elétrica, em Cascais.<br>Data: 1981-07-23 00:00:00</div>`)[0];
+                popup_4000a0e7ef4894127438351d3e66fb70.setContent(html_d7a197639294153d9cb216496c367571);
+            
+        
+
+        marker_1667c76547e99bb8aba434aa6772ca38.bindPopup(popup_4000a0e7ef4894127438351d3e66fb70)
+        ;
+
+        
+    
+    
+            marker_1667c76547e99bb8aba434aa6772ca38.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a501ed3b07342d5f76aa1c045325d0 = L.marker(
+                [38.71504601, -9.130264293],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a5d20c9df08f8d9bd9f18fc8c96a16fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "hotpink", "prefix": "glyphicon"}
+            );
+            marker_17a501ed3b07342d5f76aa1c045325d0.setIcon(icon_a5d20c9df08f8d9bd9f18fc8c96a16fd);
+        
+    
+        var popup_13dd2829b422ad0ad3a81c096aad8d3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa3546397acf1b9a83fdc45076b82898 = $(`<div id="html_aa3546397acf1b9a83fdc45076b82898" style="width: 100.0%; height: 100.0%;"><b>Fugas da Prisao</b><br>Fuga da Prisão, do então Estabelecimento Prisional das Mónicas.<br>Data: 1985-03-23 00:00:00</div>`)[0];
+                popup_13dd2829b422ad0ad3a81c096aad8d3a.setContent(html_aa3546397acf1b9a83fdc45076b82898);
+            
+        
+
+        marker_17a501ed3b07342d5f76aa1c045325d0.bindPopup(popup_13dd2829b422ad0ad3a81c096aad8d3a)
+        ;
+
+        
+    
+    
+            marker_17a501ed3b07342d5f76aa1c045325d0.bindTooltip(
+                `<div>
+                     Fugas da Prisao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bd4c9eb06a723cf3c87ae0a90abb175 = L.marker(
+                [39.74614452, -8.933016552],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_eeed34eb4ebad7ce9ee7aa43cc84ace5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4bd4c9eb06a723cf3c87ae0a90abb175.setIcon(icon_eeed34eb4ebad7ce9ee7aa43cc84ace5);
+        
+    
+        var popup_f2fb2899564ab32422b52f4b51a637d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c71feec1a2c07921fc2a65ee8d81a615 = $(`<div id="html_c71feec1a2c07921fc2a65ee8d81a615" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio de um empresário da Marinha Grande.<br>Data: 1985-03-23 00:00:00</div>`)[0];
+                popup_f2fb2899564ab32422b52f4b51a637d3.setContent(html_c71feec1a2c07921fc2a65ee8d81a615);
+            
+        
+
+        marker_4bd4c9eb06a723cf3c87ae0a90abb175.bindPopup(popup_f2fb2899564ab32422b52f4b51a637d3)
+        ;
+
+        
+    
+    
+            marker_4bd4c9eb06a723cf3c87ae0a90abb175.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b83b25feda779fe83e5e0ca690a6a0cf = L.marker(
+                [39.0218411, -8.977282787],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_78738752ec1fab67ecfb1de304a1f1eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b83b25feda779fe83e5e0ca690a6a0cf.setIcon(icon_78738752ec1fab67ecfb1de304a1f1eb);
+        
+    
+        var popup_946ef9272fc5911cd202e08cf55a1a90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3689aad75163cf1c2b3cd1281db77512 = $(`<div id="html_3689aad75163cf1c2b3cd1281db77512" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Totta e Açores no Carregado, foi utilizado um carro roubado ao Comando que agrediram semanas antes. Foi levado o equivalente a 250 000$.<br>Data: 1983-02-24 00:00:00</div>`)[0];
+                popup_946ef9272fc5911cd202e08cf55a1a90.setContent(html_3689aad75163cf1c2b3cd1281db77512);
+            
+        
+
+        marker_b83b25feda779fe83e5e0ca690a6a0cf.bindPopup(popup_946ef9272fc5911cd202e08cf55a1a90)
+        ;
+
+        
+    
+    
+            marker_b83b25feda779fe83e5e0ca690a6a0cf.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8661ce6d1a009c55ffab3f061a4d9441 = L.marker(
+                [40.92981445, -8.544711909],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0d85224790e8f2b25aa0bf8eb54f86f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8661ce6d1a009c55ffab3f061a4d9441.setIcon(icon_0d85224790e8f2b25aa0bf8eb54f86f0);
+        
+    
+        var popup_1852326ba208cff2d93b36a636266502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a454c08c9f055458acc4e49a5d5e0b2 = $(`<div id="html_0a454c08c9f055458acc4e49a5d5e0b2" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Nacional Ultramarino, em Santa Maria da Feira, foi levado o equivalente a 9 000 000$<br>Data: 1981-07-24 00:00:00</div>`)[0];
+                popup_1852326ba208cff2d93b36a636266502.setContent(html_0a454c08c9f055458acc4e49a5d5e0b2);
+            
+        
+
+        marker_8661ce6d1a009c55ffab3f061a4d9441.bindPopup(popup_1852326ba208cff2d93b36a636266502)
+        ;
+
+        
+    
+    
+            marker_8661ce6d1a009c55ffab3f061a4d9441.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fa34e02efe2dbcd8b03ba10a8dd0758 = L.marker(
+                [38.61563926, -9.103569626],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_7cc45b9a3be45ccaed94ba688039da23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fa34e02efe2dbcd8b03ba10a8dd0758.setIcon(icon_7cc45b9a3be45ccaed94ba688039da23);
+        
+    
+        var popup_54e6d8daa8a97df1cee63c9156cae0be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_994a803c9c02df040db6592e725a0903 = $(`<div id="html_994a803c9c02df040db6592e725a0903" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto ao Banco Pinto e Sotto Mayor, Fogueteiro. Foi levado um equivalente de 3 200 787$<br>Data: 1980-11-24 00:00:00</div>`)[0];
+                popup_54e6d8daa8a97df1cee63c9156cae0be.setContent(html_994a803c9c02df040db6592e725a0903);
+            
+        
+
+        marker_0fa34e02efe2dbcd8b03ba10a8dd0758.bindPopup(popup_54e6d8daa8a97df1cee63c9156cae0be)
+        ;
+
+        
+    
+    
+            marker_0fa34e02efe2dbcd8b03ba10a8dd0758.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a94242b1113e967750d9ec6796404bdc = L.marker(
+                [38.9395509, -9.328416082],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_03bebd2b387401738a8547937d2d00fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a94242b1113e967750d9ec6796404bdc.setIcon(icon_03bebd2b387401738a8547937d2d00fd);
+        
+    
+        var popup_70fdedfdeff2f1c55c84914cb68d9c87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdb6b3bda23d854e9384d27ae7413ab7 = $(`<div id="html_cdb6b3bda23d854e9384d27ae7413ab7" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à Conservatória do Registo Civil de Mafra. Foram levados 150 impressos para bilhetes de identidade, e alguns já feitos.<br>Data: 1982-11-24 00:00:00</div>`)[0];
+                popup_70fdedfdeff2f1c55c84914cb68d9c87.setContent(html_cdb6b3bda23d854e9384d27ae7413ab7);
+            
+        
+
+        marker_a94242b1113e967750d9ec6796404bdc.bindPopup(popup_70fdedfdeff2f1c55c84914cb68d9c87)
+        ;
+
+        
+    
+    
+            marker_a94242b1113e967750d9ec6796404bdc.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c6993e2d2a86918e7bf90858337fbb = L.marker(
+                [38.65341069, -8.22007371],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_dd31ef6098e1831b5dbf7dbfd8c09af5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28c6993e2d2a86918e7bf90858337fbb.setIcon(icon_dd31ef6098e1831b5dbf7dbfd8c09af5);
+        
+    
+        var popup_814165d46ecbd4aede34749d48e438b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2e523121664aa42a9889aaa897c6076 = $(`<div id="html_f2e523121664aa42a9889aaa897c6076" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na residência de uns rendeiras em Montemor-o-Novo.<br>Data: 1984-09-24 00:00:00</div>`)[0];
+                popup_814165d46ecbd4aede34749d48e438b3.setContent(html_f2e523121664aa42a9889aaa897c6076);
+            
+        
+
+        marker_28c6993e2d2a86918e7bf90858337fbb.bindPopup(popup_814165d46ecbd4aede34749d48e438b3)
+        ;
+
+        
+    
+    
+            marker_28c6993e2d2a86918e7bf90858337fbb.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae8db7e8e42b34129af3b5fbd434f7f7 = L.marker(
+                [39.75528661, -8.821200021],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_b36ae0f5c93ecb041d26df36b0b2abf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ae8db7e8e42b34129af3b5fbd434f7f7.setIcon(icon_b36ae0f5c93ecb041d26df36b0b2abf6);
+        
+    
+        var popup_5882dfa9d11709e2a0d6b3289e1d3de0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08f774207ff54b39d66a7bcd18a538d8 = $(`<div id="html_08f774207ff54b39d66a7bcd18a538d8" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão com metralhadoras e cocktails molotov contra a residência do Presidente do Concelho de Administração da fábrica de vidros Ivima da Marinha Grande.<br>Data: 1984-01-25 00:00:00</div>`)[0];
+                popup_5882dfa9d11709e2a0d6b3289e1d3de0.setContent(html_08f774207ff54b39d66a7bcd18a538d8);
+            
+        
+
+        marker_ae8db7e8e42b34129af3b5fbd434f7f7.bindPopup(popup_5882dfa9d11709e2a0d6b3289e1d3de0)
+        ;
+
+        
+    
+    
+            marker_ae8db7e8e42b34129af3b5fbd434f7f7.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b1dc1605b8b6efcd45c7145635a30f9 = L.marker(
+                [38.81362237, -9.229449223],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0fed17813c5c0699e0bb377dc049b2dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b1dc1605b8b6efcd45c7145635a30f9.setIcon(icon_0fed17813c5c0699e0bb377dc049b2dd);
+        
+    
+        var popup_adf44433f06b9364ca4e7578aee8f2d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b55640169e0b08d35548c6ddb33aeccf = $(`<div id="html_b55640169e0b08d35548c6ddb33aeccf" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à dependência do Crédito Predial Português, pela segunda vez em menos de 3 meses. Foi levado o equivalente a 707 000$.<br>Data: 1984-01-25 00:00:00</div>`)[0];
+                popup_adf44433f06b9364ca4e7578aee8f2d3.setContent(html_b55640169e0b08d35548c6ddb33aeccf);
+            
+        
+
+        marker_1b1dc1605b8b6efcd45c7145635a30f9.bindPopup(popup_adf44433f06b9364ca4e7578aee8f2d3)
+        ;
+
+        
+    
+    
+            marker_1b1dc1605b8b6efcd45c7145635a30f9.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11b23650e460eed513cf9a892631733a = L.marker(
+                [38.70002584, -9.244978972],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_fdd32fa53610bc6064dcb8c56b8b9c27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_11b23650e460eed513cf9a892631733a.setIcon(icon_fdd32fa53610bc6064dcb8c56b8b9c27);
+        
+    
+        var popup_b13daa2b9762ec83cb2a2cd51bbe68da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bfdae7f00305e09ca6d7ee72d42f4b4 = $(`<div id="html_3bfdae7f00305e09ca6d7ee72d42f4b4" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão a um dos administradores da SAPEC, no Dafundo, levou tiros em ambas pernas.<br>Data: 1981-03-25 00:00:00</div>`)[0];
+                popup_b13daa2b9762ec83cb2a2cd51bbe68da.setContent(html_3bfdae7f00305e09ca6d7ee72d42f4b4);
+            
+        
+
+        marker_11b23650e460eed513cf9a892631733a.bindPopup(popup_b13daa2b9762ec83cb2a2cd51bbe68da)
+        ;
+
+        
+    
+    
+            marker_11b23650e460eed513cf9a892631733a.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a46ec85e139291155859edc15b657921 = L.marker(
+                [41.14827312, -8.618961261],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0439125d7ef453dfae4419b7b8f4edfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_a46ec85e139291155859edc15b657921.setIcon(icon_0439125d7ef453dfae4419b7b8f4edfa);
+        
+    
+        var popup_734285c91338aeb1855866378531c25c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72a208f5f5629b5c78f8085474f169bf = $(`<div id="html_72a208f5f5629b5c78f8085474f169bf" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Troca de Tiros com agentes da Polícia de Segurança Pública no Jardim do Carregal, no Porto.<br>Data: 1983-02-26 00:00:00</div>`)[0];
+                popup_734285c91338aeb1855866378531c25c.setContent(html_72a208f5f5629b5c78f8085474f169bf);
+            
+        
+
+        marker_a46ec85e139291155859edc15b657921.bindPopup(popup_734285c91338aeb1855866378531c25c)
+        ;
+
+        
+    
+    
+            marker_a46ec85e139291155859edc15b657921.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_841cee0d64879740f2c1f10ca593b649 = L.marker(
+                [38.76434765, -9.117798053],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_d551ba05d8a0b3cc7bcb50f6d01e98a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_841cee0d64879740f2c1f10ca593b649.setIcon(icon_d551ba05d8a0b3cc7bcb50f6d01e98a1);
+        
+    
+        var popup_e38e61156f1caddd6b678f843a6ccc52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d033412246dce166c788d92aa6bb507 = $(`<div id="html_3d033412246dce166c788d92aa6bb507" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, Disparos contra o Posto da Polícia de Segurança Pública dos Olivais, em Lisboa.<br>Data: 1986-04-27 00:00:00</div>`)[0];
+                popup_e38e61156f1caddd6b678f843a6ccc52.setContent(html_3d033412246dce166c788d92aa6bb507);
+            
+        
+
+        marker_841cee0d64879740f2c1f10ca593b649.bindPopup(popup_e38e61156f1caddd6b678f843a6ccc52)
+        ;
+
+        
+    
+    
+            marker_841cee0d64879740f2c1f10ca593b649.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6cc4d23a2166c2a57df7c43076fbb57 = L.marker(
+                [41.35843881, -8.366216725],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_6d523a18a2580cf102e41f9b8eea1825 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6cc4d23a2166c2a57df7c43076fbb57.setIcon(icon_6d523a18a2580cf102e41f9b8eea1825);
+        
+    
+        var popup_f46c5dee1f5730471e8e53e9d238e501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ee0a9cfd94bc1bc45d04bfdb52e1973 = $(`<div id="html_5ee0a9cfd94bc1bc45d04bfdb52e1973" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à dependência do Banco Totta e Açores em São Martinho do Campo. Foi levado o equivalente a 1 008 000$.<br>Data: 1983-05-27 00:00:00</div>`)[0];
+                popup_f46c5dee1f5730471e8e53e9d238e501.setContent(html_5ee0a9cfd94bc1bc45d04bfdb52e1973);
+            
+        
+
+        marker_b6cc4d23a2166c2a57df7c43076fbb57.bindPopup(popup_f46c5dee1f5730471e8e53e9d238e501)
+        ;
+
+        
+    
+    
+            marker_b6cc4d23a2166c2a57df7c43076fbb57.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41b245087391d09dad655e6fcac09877 = L.marker(
+                [41.34012417, -8.479916843],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_2ab215ba881f94355e064d8d940fc598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41b245087391d09dad655e6fcac09877.setIcon(icon_2ab215ba881f94355e064d8d940fc598);
+        
+    
+        var popup_01e0d4c585a2d940bab9cb8f89fcce4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80798828c4057b07e42ff37c3c91d33 = $(`<div id="html_e80798828c4057b07e42ff37c3c91d33" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à União dos Bancos Portugueses em Vila das Aves. Foi Levado o equivalente a 369 015$.<br>Data: 1983-05-27 00:00:00</div>`)[0];
+                popup_01e0d4c585a2d940bab9cb8f89fcce4e.setContent(html_e80798828c4057b07e42ff37c3c91d33);
+            
+        
+
+        marker_41b245087391d09dad655e6fcac09877.bindPopup(popup_01e0d4c585a2d940bab9cb8f89fcce4e)
+        ;
+
+        
+    
+    
+            marker_41b245087391d09dad655e6fcac09877.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7ea52b6b209e0c895a47471a2a6b316 = L.marker(
+                [41.36436465, -8.199116997],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ef8a491c6372a8a1f84291d129c4d839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7ea52b6b209e0c895a47471a2a6b316.setIcon(icon_ef8a491c6372a8a1f84291d129c4d839);
+        
+    
+        var popup_c0297d1fbac42975a39148329e62d25c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa50f8b5244a6b827464acde862d5988 = $(`<div id="html_fa50f8b5244a6b827464acde862d5988" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas em Felgueiras, alvo não especificado.<br>Data: 1981-09-27 00:00:00</div>`)[0];
+                popup_c0297d1fbac42975a39148329e62d25c.setContent(html_fa50f8b5244a6b827464acde862d5988);
+            
+        
+
+        marker_a7ea52b6b209e0c895a47471a2a6b316.bindPopup(popup_c0297d1fbac42975a39148329e62d25c)
+        ;
+
+        
+    
+    
+            marker_a7ea52b6b209e0c895a47471a2a6b316.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6747eb3fcd0eb5f09d4da0ee734c4831 = L.marker(
+                [39.82350506, -7.493887131],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_8184e876982843867b4f8fb705dbefcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6747eb3fcd0eb5f09d4da0ee734c4831.setIcon(icon_8184e876982843867b4f8fb705dbefcd);
+        
+    
+        var popup_72dd742570d606183adacccbf9909034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a65bee8a46e26c1c3b88379b2f3aa25b = $(`<div id="html_a65bee8a46e26c1c3b88379b2f3aa25b" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, colocadas em viaturas, sendo o alvo empresários de Castelo Branco.<br>Data: NaT</div>`)[0];
+                popup_72dd742570d606183adacccbf9909034.setContent(html_a65bee8a46e26c1c3b88379b2f3aa25b);
+            
+        
+
+        marker_6747eb3fcd0eb5f09d4da0ee734c4831.bindPopup(popup_72dd742570d606183adacccbf9909034)
+        ;
+
+        
+    
+    
+            marker_6747eb3fcd0eb5f09d4da0ee734c4831.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecd8917eae6e86c21a9042ca748750d6 = L.marker(
+                [40.27924374, -7.508958354],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f28c23d664fba109c23beadeb985b2df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ecd8917eae6e86c21a9042ca748750d6.setIcon(icon_f28c23d664fba109c23beadeb985b2df);
+        
+    
+        var popup_ab483ea5fc2f81f9ee7ee1a671a62eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6185956d7dbc9ae08f89fd54b9d7966 = $(`<div id="html_c6185956d7dbc9ae08f89fd54b9d7966" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas colocadas em viaturas, sendo os alvos empresários da Covilhã.<br>Data: 1984-02-28 00:00:00</div>`)[0];
+                popup_ab483ea5fc2f81f9ee7ee1a671a62eb6.setContent(html_c6185956d7dbc9ae08f89fd54b9d7966);
+            
+        
+
+        marker_ecd8917eae6e86c21a9042ca748750d6.bindPopup(popup_ab483ea5fc2f81f9ee7ee1a671a62eb6)
+        ;
+
+        
+    
+    
+            marker_ecd8917eae6e86c21a9042ca748750d6.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4776accf2ab8ab65fc7b502f8e06e77 = L.marker(
+                [38.69919585, -9.169652591],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_3d164b78559faccf536bd07634a0bcee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_e4776accf2ab8ab65fc7b502f8e06e77.setIcon(icon_3d164b78559faccf536bd07634a0bcee);
+        
+    
+        var popup_31bc749416997ee71b4b6cca366190b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fddfdd73b2df290319927ddb8a8c808 = $(`<div id="html_5fddfdd73b2df290319927ddb8a8c808" style="width: 100.0%; height: 100.0%;"><b>Bombas Não Detonadas</b><br>Bombas Não Detonadas. Tentativa de ataque com granadas de morteiro contra o navio da Marinha Americana, USS Richard E. Byrd, estas granadas acabam por falhar o seu alvo.<br>Data: 1985-01-28 00:00:00</div>`)[0];
+                popup_31bc749416997ee71b4b6cca366190b4.setContent(html_5fddfdd73b2df290319927ddb8a8c808);
+            
+        
+
+        marker_e4776accf2ab8ab65fc7b502f8e06e77.bindPopup(popup_31bc749416997ee71b4b6cca366190b4)
+        ;
+
+        
+    
+    
+            marker_e4776accf2ab8ab65fc7b502f8e06e77.bindTooltip(
+                `<div>
+                     Bombas Não Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f777988707fc61ac06e486bfc2efd6e7 = L.marker(
+                [41.55016628, -8.428806077],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_fd8989913e089e2695924e1a8235acee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f777988707fc61ac06e486bfc2efd6e7.setIcon(icon_fd8989913e089e2695924e1a8235acee);
+        
+    
+        var popup_d432de7a43d8a64b6f1d289394a9cc04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfcc9b0a57a087f77a4a966bd14f79b2 = $(`<div id="html_dfcc9b0a57a087f77a4a966bd14f79b2" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, disparos nas pernas de um administrador da empresa Tebe, em Braga.<br>Data: 1981-06-28 00:00:00</div>`)[0];
+                popup_d432de7a43d8a64b6f1d289394a9cc04.setContent(html_dfcc9b0a57a087f77a4a966bd14f79b2);
+            
+        
+
+        marker_f777988707fc61ac06e486bfc2efd6e7.bindPopup(popup_d432de7a43d8a64b6f1d289394a9cc04)
+        ;
+
+        
+    
+    
+            marker_f777988707fc61ac06e486bfc2efd6e7.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f73f6d7a25fb121c6f3021da4b9c39e8 = L.marker(
+                [41.16403826, -8.571979876],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_40ff00fe041b58dae3511b9e34518d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cyan", "prefix": "glyphicon"}
+            );
+            marker_f73f6d7a25fb121c6f3021da4b9c39e8.setIcon(icon_40ff00fe041b58dae3511b9e34518d0f);
+        
+    
+        var popup_8156a642e85879f7210fa699a4854ebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6440b5d5a6a32c8ee4489f4bc6b0ad1c = $(`<div id="html_6440b5d5a6a32c8ee4489f4bc6b0ad1c" style="width: 100.0%; height: 100.0%;"><b>Assalto com Vitimas Mortais</b><br>Assalto Falhado ao Banco Totta e Açores em São Roque da Lameira, no Porto. <br>Data: 1980-11-28 00:00:00</div>`)[0];
+                popup_8156a642e85879f7210fa699a4854ebc.setContent(html_6440b5d5a6a32c8ee4489f4bc6b0ad1c);
+            
+        
+
+        marker_f73f6d7a25fb121c6f3021da4b9c39e8.bindPopup(popup_8156a642e85879f7210fa699a4854ebc)
+        ;
+
+        
+    
+    
+            marker_f73f6d7a25fb121c6f3021da4b9c39e8.bindTooltip(
+                `<div>
+                     Assalto com Vitimas Mortais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4756f2ab18339e5b217ed11d984a229 = L.marker(
+                [41.40716833, -8.520140395],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ea812e58d90df9e2c473fbb9fd75f67e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_e4756f2ab18339e5b217ed11d984a229.setIcon(icon_ea812e58d90df9e2c473fbb9fd75f67e);
+        
+    
+        var popup_d51d630d6805ffe541477d4a6b291941 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71f5782f05af7556234c39dff3d2f346 = $(`<div id="html_71f5782f05af7556234c39dff3d2f346" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão, disparos nas pernas de um administrador e acionista da empresa têxtil Carides, em Vila Nova de Famalicão. <br>Data: 1981-10-28 00:00:00</div>`)[0];
+                popup_d51d630d6805ffe541477d4a6b291941.setContent(html_71f5782f05af7556234c39dff3d2f346);
+            
+        
+
+        marker_e4756f2ab18339e5b217ed11d984a229.bindPopup(popup_d51d630d6805ffe541477d4a6b291941)
+        ;
+
+        
+    
+    
+            marker_e4756f2ab18339e5b217ed11d984a229.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bca468cbab739bf6a0d319deed10e78 = L.marker(
+                [38.72483762, -9.149005187],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_ec3c8866d7de6ffec654ed0c1c5f8c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bca468cbab739bf6a0d319deed10e78.setIcon(icon_ec3c8866d7de6ffec654ed0c1c5f8c3d);
+        
+    
+        var popup_4752f7e03c07478347d6ad0d89d8ea8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caa67fe3cb058eb35e974ce25ac48c62 = $(`<div id="html_caa67fe3cb058eb35e974ce25ac48c62" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à sede do Diário de Notícias. Foi levado o equivalente a 14 000 000$. Destinados ao pagamento de salários.<br>Data: 1985-04-29 00:00:00</div>`)[0];
+                popup_4752f7e03c07478347d6ad0d89d8ea8d.setContent(html_caa67fe3cb058eb35e974ce25ac48c62);
+            
+        
+
+        marker_3bca468cbab739bf6a0d319deed10e78.bindPopup(popup_4752f7e03c07478347d6ad0d89d8ea8d)
+        ;
+
+        
+    
+    
+            marker_3bca468cbab739bf6a0d319deed10e78.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c104f9b1492e848d6b1a344e110fcde5 = L.marker(
+                [39.02344141, -8.977233148],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_70fc4edcadcf172c3827e87e1badfb03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c104f9b1492e848d6b1a344e110fcde5.setIcon(icon_70fc4edcadcf172c3827e87e1badfb03);
+        
+    
+        var popup_570a6388f68f05bab1925a863c24392d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a47105c590171f9e19ce254fc4c10f8 = $(`<div id="html_9a47105c590171f9e19ce254fc4c10f8" style="width: 100.0%; height: 100.0%;"><b>Agressao</b><br>Agressão a um Comando no Carregado.<br>Data: 1983-01-29 00:00:00</div>`)[0];
+                popup_570a6388f68f05bab1925a863c24392d.setContent(html_9a47105c590171f9e19ce254fc4c10f8);
+            
+        
+
+        marker_c104f9b1492e848d6b1a344e110fcde5.bindPopup(popup_570a6388f68f05bab1925a863c24392d)
+        ;
+
+        
+    
+    
+            marker_c104f9b1492e848d6b1a344e110fcde5.bindTooltip(
+                `<div>
+                     Agressao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b8e8ad94ad0802ab10af7eb28af25f6 = L.marker(
+                [38.81293512, -9.162107733],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_1bb96f13d6f89216d7edb3db144d3c59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9b8e8ad94ad0802ab10af7eb28af25f6.setIcon(icon_1bb96f13d6f89216d7edb3db144d3c59);
+        
+    
+        var popup_4b02ce26a88e86514103d04836070983 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09aa696211b3e812f87b1e0604603d7d = $(`<div id="html_09aa696211b3e812f87b1e0604603d7d" style="width: 100.0%; height: 100.0%;"><b>Assassinato</b><br>Homicidio através de dispositivos explosivos, sendo o alvo o administrador da empresa Gelmar.<br>Data: 1984-05-29 00:00:00</div>`)[0];
+                popup_4b02ce26a88e86514103d04836070983.setContent(html_09aa696211b3e812f87b1e0604603d7d);
+            
+        
+
+        marker_9b8e8ad94ad0802ab10af7eb28af25f6.bindPopup(popup_4b02ce26a88e86514103d04836070983)
+        ;
+
+        
+    
+    
+            marker_9b8e8ad94ad0802ab10af7eb28af25f6.bindTooltip(
+                `<div>
+                     Assassinato
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7227eaf49fee7bb6c94464e2a0522689 = L.marker(
+                [38.63923528, -9.099472119],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0f749120e267a506fee95027d8a2a046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7227eaf49fee7bb6c94464e2a0522689.setIcon(icon_0f749120e267a506fee95027d8a2a046);
+        
+    
+        var popup_8ccbe54560615ed2e5d89c558bad4eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_590d7f518d10bb1567933806289b2486 = $(`<div id="html_590d7f518d10bb1567933806289b2486" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na residência de um advogado empregado pela Lurgel.<br>Data: 1983-11-29 00:00:00</div>`)[0];
+                popup_8ccbe54560615ed2e5d89c558bad4eb6.setContent(html_590d7f518d10bb1567933806289b2486);
+            
+        
+
+        marker_7227eaf49fee7bb6c94464e2a0522689.bindPopup(popup_8ccbe54560615ed2e5d89c558bad4eb6)
+        ;
+
+        
+    
+    
+            marker_7227eaf49fee7bb6c94464e2a0522689.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee99dcf9e44ee4b03ad507856ff9c6cb = L.marker(
+                [38.6294555, -9.12469473],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_6458d4d111a65ae1015f1b18b8e4197a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee99dcf9e44ee4b03ad507856ff9c6cb.setIcon(icon_6458d4d111a65ae1015f1b18b8e4197a);
+        
+    
+        var popup_8249d5d7bf594faebbadb8efcf8278de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7817e8ce3578ed8e5ed15aa408b99b = $(`<div id="html_0f7817e8ce3578ed8e5ed15aa408b99b" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na residência de um empresário da empresa Lurgel.<br>Data: 1983-11-29 00:00:00</div>`)[0];
+                popup_8249d5d7bf594faebbadb8efcf8278de.setContent(html_0f7817e8ce3578ed8e5ed15aa408b99b);
+            
+        
+
+        marker_ee99dcf9e44ee4b03ad507856ff9c6cb.bindPopup(popup_8249d5d7bf594faebbadb8efcf8278de)
+        ;
+
+        
+    
+    
+            marker_ee99dcf9e44ee4b03ad507856ff9c6cb.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92b9ebf954c8ad9f9dbdc97bc3cd557f = L.marker(
+                [41.12687611, -8.597748548],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_abec52940c3fdbbf636aba181cb29c2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92b9ebf954c8ad9f9dbdc97bc3cd557f.setIcon(icon_abec52940c3fdbbf636aba181cb29c2b);
+        
+    
+        var popup_c7a3ffbde56ee5fb5bf63c400a8a1f11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd5f224ac7897ab24788d3af78357628 = $(`<div id="html_dd5f224ac7897ab24788d3af78357628" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à empresa Salvador Caetano, em Vila Nova de Gaia. Foi levado o equivalente a 42 000 000$, destinados ao pagamento de salários dos empregados.<br>Data: 1984-11-29 00:00:00</div>`)[0];
+                popup_c7a3ffbde56ee5fb5bf63c400a8a1f11.setContent(html_dd5f224ac7897ab24788d3af78357628);
+            
+        
+
+        marker_92b9ebf954c8ad9f9dbdc97bc3cd557f.bindPopup(popup_c7a3ffbde56ee5fb5bf63c400a8a1f11)
+        ;
+
+        
+    
+    
+            marker_92b9ebf954c8ad9f9dbdc97bc3cd557f.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31954341a1fa73607d8d40ffb2984b23 = L.marker(
+                [41.13422454, -8.618500721],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_bc1f74327ac6f5bdbe56f2f23313c5fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31954341a1fa73607d8d40ffb2984b23.setIcon(icon_bc1f74327ac6f5bdbe56f2f23313c5fb);
+        
+    
+        var popup_a6c91e6d81055259beccf6694046d142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff98dc897011d58fde20c41e66dd844a = $(`<div id="html_ff98dc897011d58fde20c41e66dd844a" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores em Vila Nova de Gaia. Foi levado um equivalente de 14 000 000$.<br>Data: 1982-10-29 00:00:00</div>`)[0];
+                popup_a6c91e6d81055259beccf6694046d142.setContent(html_ff98dc897011d58fde20c41e66dd844a);
+            
+        
+
+        marker_31954341a1fa73607d8d40ffb2984b23.bindPopup(popup_a6c91e6d81055259beccf6694046d142)
+        ;
+
+        
+    
+    
+            marker_31954341a1fa73607d8d40ffb2984b23.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_312554db97f0b47d63d2c1561b1d4b18 = L.marker(
+                [38.45858068, -7.750263425],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_d84f463a620ff7f4d4222ba96fbeecd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_312554db97f0b47d63d2c1561b1d4b18.setIcon(icon_d84f463a620ff7f4d4222ba96fbeecd1);
+        
+    
+        var popup_e631d8f0b01da441e3c42abf98e437db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff1e40593d6e3a170700e9480ccd22ed = $(`<div id="html_ff1e40593d6e3a170700e9480ccd22ed" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas, colocada na Janela da Casa de um agricultor. Vitima Mortal, neto do agricultor, um bebé com 4 meses de idade.<br>Data: 1984-04-30 00:00:00</div>`)[0];
+                popup_e631d8f0b01da441e3c42abf98e437db.setContent(html_ff1e40593d6e3a170700e9480ccd22ed);
+            
+        
+
+        marker_312554db97f0b47d63d2c1561b1d4b18.bindPopup(popup_e631d8f0b01da441e3c42abf98e437db)
+        ;
+
+        
+    
+    
+            marker_312554db97f0b47d63d2c1561b1d4b18.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c55e899b127cdde99b4115108f07414c = L.marker(
+                [39.75791532, -9.029866659],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_bab67aefb45031ed9e63de981cfdf1fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c55e899b127cdde99b4115108f07414c.setIcon(icon_bab67aefb45031ed9e63de981cfdf1fb);
+        
+    
+        var popup_8cdb34eddfc2d50d538312ecb2fef76f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbab0cf8ae5fd810580c122f0e88be98 = $(`<div id="html_fbab0cf8ae5fd810580c122f0e88be98" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a uma Carrinha de Valores em São Pedro de Moel. Foi levado o equivalente a 5 000 000$.<br>Data: 1982-01-30 00:00:00</div>`)[0];
+                popup_8cdb34eddfc2d50d538312ecb2fef76f.setContent(html_fbab0cf8ae5fd810580c122f0e88be98);
+            
+        
+
+        marker_c55e899b127cdde99b4115108f07414c.bindPopup(popup_8cdb34eddfc2d50d538312ecb2fef76f)
+        ;
+
+        
+    
+    
+            marker_c55e899b127cdde99b4115108f07414c.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d7fb72d6d78d973264f8e01ce011ed1 = L.marker(
+                [39.74914212, -8.933415949],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_69166d3c77b911225aaf648850e22d37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d7fb72d6d78d973264f8e01ce011ed1.setIcon(icon_69166d3c77b911225aaf648850e22d37);
+        
+    
+        var popup_89b11aaaa1c4841057673cdf8a032d07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f005f68fbc96664aa73a73ba2118492 = $(`<div id="html_2f005f68fbc96664aa73a73ba2118492" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores. Foi levado o equivalente a 5 000 000$. Uma vitima ficou tetraplégica.<br>Data: 1984-01-30 00:00:00</div>`)[0];
+                popup_89b11aaaa1c4841057673cdf8a032d07.setContent(html_2f005f68fbc96664aa73a73ba2118492);
+            
+        
+
+        marker_8d7fb72d6d78d973264f8e01ce011ed1.bindPopup(popup_89b11aaaa1c4841057673cdf8a032d07)
+        ;
+
+        
+    
+    
+            marker_8d7fb72d6d78d973264f8e01ce011ed1.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa08b71e5822fd8d1b1999a8b6bb5215 = L.marker(
+                [38.72870416, -9.10896584],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_d1b5bb2b922c96bc80287971f85fef4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa08b71e5822fd8d1b1999a8b6bb5215.setIcon(icon_d1b5bb2b922c96bc80287971f85fef4c);
+        
+    
+        var popup_72e9a163131254ce5f627eef70860a37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f9680fc5de1f7842a3d622ed78abd1e = $(`<div id="html_6f9680fc5de1f7842a3d622ed78abd1e" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à Caixa Geral de Depósitos de Xabregas. Foram levados um equivalente de 113 500$.<br>Data: 1980-07-30 00:00:00</div>`)[0];
+                popup_72e9a163131254ce5f627eef70860a37.setContent(html_6f9680fc5de1f7842a3d622ed78abd1e);
+            
+        
+
+        marker_aa08b71e5822fd8d1b1999a8b6bb5215.bindPopup(popup_72e9a163131254ce5f627eef70860a37)
+        ;
+
+        
+    
+    
+            marker_aa08b71e5822fd8d1b1999a8b6bb5215.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35b2c1fedeb3eb9a2e5a5cd5617d88d1 = L.marker(
+                [41.06875873, -8.652995889],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_84ac405cce00e2de8e8dc00e1178cd82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35b2c1fedeb3eb9a2e5a5cd5617d88d1.setIcon(icon_84ac405cce00e2de8e8dc00e1178cd82);
+        
+    
+        var popup_edf482e9c8a3cbaba125786bc9f9011c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f654c68b25edacb3633ac39b83f400b = $(`<div id="html_8f654c68b25edacb3633ac39b83f400b" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à firma Vaessen, em Miramar. Foi levado o equivalente a 147 000$.<br>Data: 1983-11-30 00:00:00</div>`)[0];
+                popup_edf482e9c8a3cbaba125786bc9f9011c.setContent(html_8f654c68b25edacb3633ac39b83f400b);
+            
+        
+
+        marker_35b2c1fedeb3eb9a2e5a5cd5617d88d1.bindPopup(popup_edf482e9c8a3cbaba125786bc9f9011c)
+        ;
+
+        
+    
+    
+            marker_35b2c1fedeb3eb9a2e5a5cd5617d88d1.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_465f925897818b4abdc5cfac92c2f2c7 = L.marker(
+                [38.65578725, -9.154638973],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_0d9049a0805973df2ccdc8ca65ef7d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_465f925897818b4abdc5cfac92c2f2c7.setIcon(icon_0d9049a0805973df2ccdc8ca65ef7d66);
+        
+    
+        var popup_0ea0aa647a926c54edf0223ba4586648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86c0868dea9fc9ae2876420a75dab5c2 = $(`<div id="html_86c0868dea9fc9ae2876420a75dab5c2" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto à Rodoviária de Almada, no Laranjeiro. Foi levado um equivalente a 9 158 572$.<br>Data: 1983-11-30 00:00:00</div>`)[0];
+                popup_0ea0aa647a926c54edf0223ba4586648.setContent(html_86c0868dea9fc9ae2876420a75dab5c2);
+            
+        
+
+        marker_465f925897818b4abdc5cfac92c2f2c7.bindPopup(popup_0ea0aa647a926c54edf0223ba4586648)
+        ;
+
+        
+    
+    
+            marker_465f925897818b4abdc5cfac92c2f2c7.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e46f4d2b3e765f79f54e3722816d2b6 = L.marker(
+                [41.15367912, -8.653086132],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f2de2fb9a6738f6773d6fef74cc7e7b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e46f4d2b3e765f79f54e3722816d2b6.setIcon(icon_f2de2fb9a6738f6773d6fef74cc7e7b2);
+        
+    
+        var popup_c7817a3f994ad2c4c60842712cc4dc32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a89ff1e36b707b728fc88644132b33fb = $(`<div id="html_a89ff1e36b707b728fc88644132b33fb" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a Carrinha de Valores algures no Porto. Foi levado o equivalente de 1 450 000$.<br>Data: 1983-09-30 00:00:00</div>`)[0];
+                popup_c7817a3f994ad2c4c60842712cc4dc32.setContent(html_a89ff1e36b707b728fc88644132b33fb);
+            
+        
+
+        marker_3e46f4d2b3e765f79f54e3722816d2b6.bindPopup(popup_c7817a3f994ad2c4c60842712cc4dc32)
+        ;
+
+        
+    
+    
+            marker_3e46f4d2b3e765f79f54e3722816d2b6.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe15f0c419cec61067e23e7359aa7278 = L.marker(
+                [38.64403758, -9.094582927],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_e228c0109062a5b9b0e903130b980d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe15f0c419cec61067e23e7359aa7278.setIcon(icon_e228c0109062a5b9b0e903130b980d98);
+        
+    
+        var popup_e803222103eef187f5a805e87c1b2fe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d52c27d1768be75507445e1850218fd6 = $(`<div id="html_d52c27d1768be75507445e1850218fd6" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a  Carrinha de Valores no Seixal. Foi levado o equivalente a 11 000 000$.<br>Data: 1984-01-31 00:00:00</div>`)[0];
+                popup_e803222103eef187f5a805e87c1b2fe2.setContent(html_d52c27d1768be75507445e1850218fd6);
+            
+        
+
+        marker_fe15f0c419cec61067e23e7359aa7278.bindPopup(popup_e803222103eef187f5a805e87c1b2fe2)
+        ;
+
+        
+    
+    
+            marker_fe15f0c419cec61067e23e7359aa7278.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ebcc3d6fdecead66b9770a303d1d4e8 = L.marker(
+                [38.52830532, -8.89626958],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_f5ee3de0a102d91f15012a9953e66021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_3ebcc3d6fdecead66b9770a303d1d4e8.setIcon(icon_f5ee3de0a102d91f15012a9953e66021);
+        
+    
+        var popup_7e1fa75b84738c39800c587702725bd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56375568d701657129e93a71d5160372 = $(`<div id="html_56375568d701657129e93a71d5160372" style="width: 100.0%; height: 100.0%;"><b>Tentativa de Assalto (falhada)</b><br>Assalto Falhado à Renault Portugal.<br>Data: 1983-03-31 00:00:00</div>`)[0];
+                popup_7e1fa75b84738c39800c587702725bd4.setContent(html_56375568d701657129e93a71d5160372);
+            
+        
+
+        marker_3ebcc3d6fdecead66b9770a303d1d4e8.bindPopup(popup_7e1fa75b84738c39800c587702725bd4)
+        ;
+
+        
+    
+    
+            marker_3ebcc3d6fdecead66b9770a303d1d4e8.bindTooltip(
+                `<div>
+                     Tentativa de Assalto (falhada)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_166385142338c1ca0c3e231bd3533048 = L.marker(
+                [38.64390927, -8.218273777],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_7976245ec394b320532d9d030d261c5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_166385142338c1ca0c3e231bd3533048.setIcon(icon_7976245ec394b320532d9d030d261c5a);
+        
+    
+        var popup_63319875e947e4488d0aa2144fb2baca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dedda91f832f76db4e66b21416d4efe3 = $(`<div id="html_dedda91f832f76db4e66b21416d4efe3" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas numa viatura em Montemor-o-Novo. Data especifica não confirmada.<br>Data: 1982-08-01 00:00:00</div>`)[0];
+                popup_63319875e947e4488d0aa2144fb2baca.setContent(html_dedda91f832f76db4e66b21416d4efe3);
+            
+        
+
+        marker_166385142338c1ca0c3e231bd3533048.bindPopup(popup_63319875e947e4488d0aa2144fb2baca)
+        ;
+
+        
+    
+    
+            marker_166385142338c1ca0c3e231bd3533048.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adc42dc97829c4bfc76038d7a3c61863 = L.marker(
+                [38.26901495, -8.730164378],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_c36d32fd4b824292052a061eb30f1630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "hotpink", "prefix": "glyphicon"}
+            );
+            marker_adc42dc97829c4bfc76038d7a3c61863.setIcon(icon_c36d32fd4b824292052a061eb30f1630);
+        
+    
+        var popup_66e2a9ff6bc6db4204a51f634fb9f5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5b4d9322805ca78414a8511d77b2cf8 = $(`<div id="html_a5b4d9322805ca78414a8511d77b2cf8" style="width: 100.0%; height: 100.0%;"><b>Fugas da Prisao</b><br>Fuga da Prisão de Pinheiro Cruz.<br>Data: 1982-12-01 00:00:00</div>`)[0];
+                popup_66e2a9ff6bc6db4204a51f634fb9f5f4.setContent(html_a5b4d9322805ca78414a8511d77b2cf8);
+            
+        
+
+        marker_adc42dc97829c4bfc76038d7a3c61863.bindPopup(popup_66e2a9ff6bc6db4204a51f634fb9f5f4)
+        ;
+
+        
+    
+    
+            marker_adc42dc97829c4bfc76038d7a3c61863.bindTooltip(
+                `<div>
+                     Fugas da Prisao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3a85c46e4cbdeecd765a77b29d12bdb = L.marker(
+                [41.00805818, -8.642975154],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_3903b53b08cdb74c2f0e2cb39c2e6666 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3a85c46e4cbdeecd765a77b29d12bdb.setIcon(icon_3903b53b08cdb74c2f0e2cb39c2e6666);
+        
+    
+        var popup_5b9e7f45287c627b357c99d44c1563a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b929ebcff3cff3bb59bab91dfff1188 = $(`<div id="html_3b929ebcff3cff3bb59bab91dfff1188" style="width: 100.0%; height: 100.0%;"><b>Assalto</b><br>Assalto a um Banco não especificado em Espinho. Data especifica não confirmada<br>Data: 1983-02-01 00:00:00</div>`)[0];
+                popup_5b9e7f45287c627b357c99d44c1563a7.setContent(html_3b929ebcff3cff3bb59bab91dfff1188);
+            
+        
+
+        marker_e3a85c46e4cbdeecd765a77b29d12bdb.bindPopup(popup_5b9e7f45287c627b357c99d44c1563a7)
+        ;
+
+        
+    
+    
+            marker_e3a85c46e4cbdeecd765a77b29d12bdb.bindTooltip(
+                `<div>
+                     Assalto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c9ab545d037fa9af87571b877ed5d6a = L.marker(
+                [38.7695435, -9.305460535],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_a7b4a121bd3d1c1165cf5b29752ad043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c9ab545d037fa9af87571b877ed5d6a.setIcon(icon_a7b4a121bd3d1c1165cf5b29752ad043);
+        
+    
+        var popup_b10ded85d626ca8eb84fdfa23ff9bb74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adbd52e71321609be5bcda9ce32762b0 = $(`<div id="html_adbd52e71321609be5bcda9ce32762b0" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas na residência de um empresário industrial no Cacém.<br>Data: 1982-01-01 00:00:00</div>`)[0];
+                popup_b10ded85d626ca8eb84fdfa23ff9bb74.setContent(html_adbd52e71321609be5bcda9ce32762b0);
+            
+        
+
+        marker_8c9ab545d037fa9af87571b877ed5d6a.bindPopup(popup_b10ded85d626ca8eb84fdfa23ff9bb74)
+        ;
+
+        
+    
+    
+            marker_8c9ab545d037fa9af87571b877ed5d6a.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52efbaa3eb9897b004368c4a61bede6c = L.marker(
+                [38.76837403, -9.294940216],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_c7d9af2d8760bfe33e4f4d3b9094e7ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52efbaa3eb9897b004368c4a61bede6c.setIcon(icon_c7d9af2d8760bfe33e4f4d3b9094e7ee);
+        
+    
+        var popup_d873884ef926d2a1810f6caa8215ae14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a97b3479a879e85c9b2486b15db74dbd = $(`<div id="html_a97b3479a879e85c9b2486b15db74dbd" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Posto da Guarda Nacional Republicana do Cacém. Data Especifica não confirmada.<br>Data: 1982-01-01 00:00:00</div>`)[0];
+                popup_d873884ef926d2a1810f6caa8215ae14.setContent(html_a97b3479a879e85c9b2486b15db74dbd);
+            
+        
+
+        marker_52efbaa3eb9897b004368c4a61bede6c.bindPopup(popup_d873884ef926d2a1810f6caa8215ae14)
+        ;
+
+        
+    
+    
+            marker_52efbaa3eb9897b004368c4a61bede6c.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c342de7ea06ff63d21bea2885384c27e = L.marker(
+                [39.69455028, -8.130264676],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_1a8ce16d833cc242a48ab95aca1966b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c342de7ea06ff63d21bea2885384c27e.setIcon(icon_1a8ce16d833cc242a48ab95aca1966b5);
+        
+    
+        var popup_82eac550ea52316a5816423d7f92ba91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cccc5bf7cf31d8f2514bb24c52da3f80 = $(`<div id="html_cccc5bf7cf31d8f2514bb24c52da3f80" style="width: 100.0%; height: 100.0%;"><b>Vandalismo</b><br>Constante Vandalismo contra veiculos da Polícia de Segurança Pública<br>Data: 1980-07-01 00:00:00</div>`)[0];
+                popup_82eac550ea52316a5816423d7f92ba91.setContent(html_cccc5bf7cf31d8f2514bb24c52da3f80);
+            
+        
+
+        marker_c342de7ea06ff63d21bea2885384c27e.bindPopup(popup_82eac550ea52316a5816423d7f92ba91)
+        ;
+
+        
+    
+    
+            marker_c342de7ea06ff63d21bea2885384c27e.bindTooltip(
+                `<div>
+                     Vandalismo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa35580190fb3733e9d3b937a3fcf2a4 = L.marker(
+                [38.697433, -9.42323007],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_22f977f1cba010473be664db1d412367 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa35580190fb3733e9d3b937a3fcf2a4.setIcon(icon_22f977f1cba010473be664db1d412367);
+        
+    
+        var popup_5b00b2f57bd14168593c9aabf061b605 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef31470a918e3327a719da13a035b80c = $(`<div id="html_ef31470a918e3327a719da13a035b80c" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Explosivos Detonados no Royal British Club em Cascais. Data especifica não confirmada.<br>Data: 1981-05-01 00:00:00</div>`)[0];
+                popup_5b00b2f57bd14168593c9aabf061b605.setContent(html_ef31470a918e3327a719da13a035b80c);
+            
+        
+
+        marker_fa35580190fb3733e9d3b937a3fcf2a4.bindPopup(popup_5b00b2f57bd14168593c9aabf061b605)
+        ;
+
+        
+    
+    
+            marker_fa35580190fb3733e9d3b937a3fcf2a4.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0004de3f682d73af8ea6c001cb23ee5c = L.marker(
+                [39.74467292, -8.811827193],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_73610e1d777ec314222bbd7a35d08bdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0004de3f682d73af8ea6c001cb23ee5c.setIcon(icon_73610e1d777ec314222bbd7a35d08bdb);
+        
+    
+        var popup_abc677a979734c88af2bf5126bf9eb33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a619322ff25fbbb4f5cf50a71c2c86c = $(`<div id="html_0a619322ff25fbbb4f5cf50a71c2c86c" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas no Posto da Guarda Nacional Republicana de Leiria. Data especifica não confirmada.<br>Data: 1983-11-01 00:00:00</div>`)[0];
+                popup_abc677a979734c88af2bf5126bf9eb33.setContent(html_0a619322ff25fbbb4f5cf50a71c2c86c);
+            
+        
+
+        marker_0004de3f682d73af8ea6c001cb23ee5c.bindPopup(popup_abc677a979734c88af2bf5126bf9eb33)
+        ;
+
+        
+    
+    
+            marker_0004de3f682d73af8ea6c001cb23ee5c.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9433765f1afa0a130a17e61c2394df57 = L.marker(
+                [37.08922362, -8.298157852],
+                {}
+            ).addTo(map_af6e2aa81616e0dbc3e4b2a70ce1ca32);
+        
+    
+            var icon_b2e447947aafda8d1d0457040d5c9d10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9433765f1afa0a130a17e61c2394df57.setIcon(icon_b2e447947aafda8d1d0457040d5c9d10);
+        
+    
+        var popup_999f821aecdd7b01de168782dc9dfab3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_673c22168315c97bead5796688f254fd = $(`<div id="html_673c22168315c97bead5796688f254fd" style="width: 100.0%; height: 100.0%;"><b>Bombas Detonadas</b><br>Bombas Detonadas em Empreendimentos Turísiticos no Algarve. Data especifica não confirmada. Local especifico não confirmado<br>Data: 1986-09-01 00:00:00</div>`)[0];
+                popup_999f821aecdd7b01de168782dc9dfab3.setContent(html_673c22168315c97bead5796688f254fd);
+            
+        
+
+        marker_9433765f1afa0a130a17e61c2394df57.bindPopup(popup_999f821aecdd7b01de168782dc9dfab3)
+        ;
+
+        
+    
+    
+            marker_9433765f1afa0a130a17e61c2394df57.bindTooltip(
+                `<div>
+                     Bombas Detonadas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
